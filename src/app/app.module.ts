@@ -12,6 +12,7 @@ import { ContactComponent } from './contact/contact.component';
 import { EquipmentComponent } from './equipment/equipment.component';
 import { FooterComponent } from './footer/footer.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { ServicesComponent } from './services/services.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     GalleryComponent,
     ContactComponent,
     EquipmentComponent,
-    FooterComponent
+    FooterComponent,
+    ServicesComponent
   ],
   imports: [
     BrowserModule,
