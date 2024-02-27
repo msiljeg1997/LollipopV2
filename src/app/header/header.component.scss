@@ -1,0 +1,40 @@
+@media screen and (max-width: 1200px) {
+    .container {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+}
+
+a {
+    color: black;
+}
+
+.container-fluid{
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important; 
+}
+
+.header_color{
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f2f2f2 ;
+}
+.header{
+    background-color: #f2f2f2 ;
+}
+.container-navbar{
+    width: 1000px !important;
+}
+.gumb{
+    background-color: #3e83a4;
+    color: white;
+    border: none;
+    width: 250px;
+    border-radius: 0;
+    height: 50px;
+    margin-left: 10px;
+}
