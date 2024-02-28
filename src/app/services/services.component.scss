@@ -7,6 +7,71 @@
     object-fit: cover;
     z-index: 2;
     background-position: center;
-    position: absolute;
-    
+}
+
+.text-wrapper {
+    position: relative;
+    top: 60%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: left;
+    width: 680px;
+    z-index: 3;
+}
+
+.centered-text {
+    font-size: 50px;
+}
+
+.centered-text2 {
+    font-size: 20px;
+}
+
+.section_slika_services2 {
+    width: 100vw;
+    height: 1230px;
+    background-repeat: no-repeat;
+    background-image: url('/assets/sectionServicesSlika2.jpeg');
+    background-size: 100% 100%; 
+    background-position: center;
+}
+
+.section1-wrapper, .section2-wrapper {
+    position: relative;
+    width: 100vw;
+}
+.myColPics{
+    height: 270px; 
+    width: 450px; 
+    background-color: red;
+}
+.myColText{
+    height: 270px; 
+    width: 450px; 
+    background-color: rgb(60, 0, 255);
+}
+.myColPics1{
+    background-image: url('/assets/sectionServicesGrid1.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center;
+}
+.myColPics2{
+    background-image: url('/assets/sectionServicesGrid2.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center;
+}
+.myColPics3{
+    background-image: url('/assets/sectionServicesGrid3.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center;
+}
+.myColPics4{
+    background-image: url('/assets/sectionServicesGrid4.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center;
 }
