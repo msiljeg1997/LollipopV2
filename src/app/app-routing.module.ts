@@ -4,11 +4,13 @@ import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { ServicesComponent } from './services/services.component';
 import { EquipmentComponent } from './equipment/equipment.component';
+import { GalleryComponent } from './gallery/gallery.component';
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
   { path: 'services', component: ServicesComponent },
   { path: 'equipment', component: EquipmentComponent },
+  { path: 'gallery', component: GalleryComponent },
   { path: '', redirectTo: '/home', pathMatch: 'full' } 
 ];
 
