@@ -8,7 +8,6 @@ import { HeaderComponent } from './header/header.component';
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { GalleryComponent } from './gallery/gallery.component';
-import { ContactComponent } from './contact/contact.component';
 import { EquipmentComponent } from './equipment/equipment.component';
 import { FooterComponent } from './footer/footer.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
@@ -21,7 +20,6 @@ import { ServicesComponent } from './services/services.component';
     HomeComponent,
     AboutComponent,
     GalleryComponent,
-    ContactComponent,
     EquipmentComponent,
     FooterComponent,
     ServicesComponent

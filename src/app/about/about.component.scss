@@ -1,0 +1,83 @@
+.section_slika_services {
+    width: 100vw;
+    height: 500px;
+    background-repeat: no-repeat;
+    background-image: url('/assets/SectionAboutSlika1.jpeg');
+    background-size: 100% 100%; 
+    object-fit: cover;
+    z-index: 2;
+    background-position: center;
+}
+
+.text-wrapper {
+    position: relative;
+    top: 70%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: left;
+    width: 680px;
+    z-index: 3;
+}
+.centered-text {
+    font-size: 50px;
+}
+
+.centered-text2 {
+    font-size: 20px;
+}
+.section1-wrapper, .section2-wrapper {
+    position: relative;
+    width: 100vw;
+}
+.section_slika_services2 {
+    width: 100vw;
+    height: 1000px;
+    background-repeat: no-repeat;
+    background-image: url('/assets/sectionServicesSlika2.jpeg');
+    background-size: 100% 100%; 
+    background-position: center;
+}
+.colAboutPicStartLeft{
+    height: 270px;
+    width: 450px;
+    background-image: url('/assets/sectionAboutGridStartLeft.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center;
+    padding:10px;
+}
+.colAboutPicStartRight{
+    height: 270px;
+    width: 450px;
+    background-image: url('/assets/sectionAboutGridStartRight.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center;
+    padding:10px;
+}
+.colAboutText1{
+    height: 270px;
+    width: 450px;
+    text-align: justify;
+}
+.center-content {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 450px;
+}
+.colAboutPicEndLeft{
+    height: 270px;
+    width: 450px;
+    background-image: url('/assets/sectionAboutGridEndLeft.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center;
+    padding:10px;
+}
+.colAboutText2_wrapper{
+    height: 270px;
+    width: 450px;
+}
