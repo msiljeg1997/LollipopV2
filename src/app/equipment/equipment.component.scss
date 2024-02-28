@@ -1,0 +1,71 @@
+.section_slika_services {
+    width: 100vw;
+    height: 500px;
+    background-repeat: no-repeat;
+    background-image: url('/assets/SectionEquipmentSlika1.jpeg');
+    background-size: 100% 100%; 
+    object-fit: cover;
+    z-index: 2;
+    background-position: center;
+}
+
+.text-wrapper {
+    position: relative;
+    top: 70%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: left;
+    width: 680px;
+    z-index: 3;
+}
+.centered-text {
+    font-size: 50px;
+}
+
+.centered-text2 {
+    font-size: 20px;
+}
+.section1-wrapper, .section2-wrapper {
+    position: relative;
+    width: 100vw;
+}
+.opremaContainer{
+    padding-top: 50px;
+}
+.section_slika_services2 {
+    width: 100vw;
+    height: 650px;
+    background-repeat: no-repeat;
+    background-image: url('/assets/sectionServicesSlika2.jpeg');
+    background-size: 100% 100%; 
+    background-position: center;
+}
+.equipment_text_wrapper{
+    height: auto;
+    width: 215px;
+    margin-top: 20px;
+}
+.equipment_col_wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; // This is to ensure the items are stacked vertically
+}
+@each $i in 1, 2, 3, 4, 5 {
+    .equipment_slika#{$i} {
+        background-image: url('/assets/Equipment_okrugle_#{$i}.jpeg');
+        border-radius: 50%;
+        height: 115px;
+        width: 115px;
+        background-size: 100% 100%; 
+        background-position: center;
+    }
+}
+.equipment_textHeader{
+ text-align: center;
+ margin-left: 10px;
+}
+.equipment_textP{
+margin-left: 10px;
+}
