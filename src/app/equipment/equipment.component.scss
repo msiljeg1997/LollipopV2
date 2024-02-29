@@ -19,6 +19,7 @@
     left: 45%;
     transform: translate(-50%, -50%);
     color: #ececec;
+    font-family: 'WixMadeforDisplay-VariableFont_wght', sans-serif;
     text-align: left;
     width: 680px;
     z-index: 3;
@@ -33,6 +34,7 @@
 .centered-text {
     font-size: 50px;
     color: #ececec;
+    font-family: 'WixMadeforDisplay-VariableFont_wght', sans-serif;
     @media (max-width: 450px) {
         font-size: 35px;
         padding-right: 80px;
@@ -44,6 +46,7 @@
     font-size: 17px;
     line-height: 1.4em;
     color: #ececec;
+    font-family: 'WixMadeforDisplay-VariableFont_wght', sans-serif;
 }
 .section1-wrapper, .section2-wrapper {
     position: relative;
@@ -70,6 +73,7 @@
     width: 235px;
     margin-top: 20px;
     color: #565656;
+    font-family: 'WixMadeforDisplay-VariableFont_wght', sans-serif;
 }
 .equipment_col_wrapper {
     display: flex;

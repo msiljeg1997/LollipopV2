@@ -22,6 +22,14 @@ a {
     padding-left: 0px !important;
     padding-right: 0px !important; 
 }
+.nav-link {
+    font-family: 'WixMadeforDisplay-VariableFont_wght', sans-serif;
+    color: #565656;
+  
+    &:hover {
+      font-weight: bold;
+    }
+  }
 
 .header_color{
     height: 100px;

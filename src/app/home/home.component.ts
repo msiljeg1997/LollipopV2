@@ -1,4 +1,5 @@
 import { Component, ElementRef, HostListener, Renderer2 } from '@angular/core';
+import { FormGroup, FormControl } from '@angular/forms';
 
 @Component({
   selector: 'app-home',
@@ -8,6 +9,12 @@ import { Component, ElementRef, HostListener, Renderer2 } from '@angular/core';
 export class HomeComponent {
   constructor(private renderer: Renderer2, private el: ElementRef) {}
   isMobile = window.innerWidth < 450;
+
+  contactForm = new FormGroup({
+    contactNumber: new FormControl(''),
+    email: new FormControl(''),
+    message: new FormControl(''),
+  });
 
   @HostListener('window:resize', ['$event'])
   onResize(event: any) {
@@ -31,5 +38,9 @@ export class HomeComponent {
         this.renderer.setStyle(rightImage, 'right', '-30%');
       }
     }
+  }
+
+  onSubmit(): void {
+    //moram sredit na bekendu
   }
 }

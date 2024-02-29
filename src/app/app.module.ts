@@ -16,6 +16,7 @@ import { CarouselNavigationComponent } from './carousel-navigation/carousel-navi
 import { CarouselComponent } from './carousel/carousel.component';
 import { NgbCarouselModule } from '@ng-bootstrap/ng-bootstrap';
 import { NgIf } from '@angular/common';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -36,7 +37,8 @@ import { NgIf } from '@angular/common';
     AppRoutingModule,
     NgbModule,
     NgbCarouselModule,
-    NgIf
+    NgIf,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
