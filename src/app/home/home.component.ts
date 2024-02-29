@@ -7,6 +7,7 @@ import { Component, ElementRef, HostListener, Renderer2 } from '@angular/core';
 })
 export class HomeComponent {
   constructor(private renderer: Renderer2, private el: ElementRef) {}
+  isMobile = window.innerWidth < 450;
 
   @HostListener('window:resize', ['$event'])
   onResize(event: any) {
