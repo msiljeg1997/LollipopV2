@@ -7,6 +7,10 @@
     object-fit: cover;
     z-index: 2;
     background-position: center;
+    @media (max-width: 450px) {
+        height: 520px;
+        background-size: 100% 100%; 
+    }
 }
 
 .text-wrapper {
@@ -18,13 +22,26 @@
     text-align: left;
     width: 680px;
     z-index: 3;
+    @media (max-width: 450px) {
+        width: 100%;
+        top: 48%;
+        left: 50%;
+        padding: 25px;
+        transform: translate(-50%, -30%);
+    }
 }
 .centered-text {
     font-size: 50px;
+    @media (max-width: 450px) {
+        font-size: 35px;
+        padding-right: 80px;
+        line-height: 1em;
+    }
 }
 
 .centered-text2 {
-    font-size: 20px;
+    font-size: 17px;
+    line-height: 1.4em;
 }
 .section1-wrapper, .section2-wrapper {
     position: relative;
@@ -40,6 +57,11 @@
     background-image: url('/assets/sectionServicesSlika2.jpeg');
     background-size: 100% 100%; 
     background-position: center;
+    @media (max-width: 450px) {
+        height: auto;
+        background-repeat:repeat-y;
+        background-size: 100%; 
+    }
 }
 .equipment_text_wrapper{
     height: auto;
