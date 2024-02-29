@@ -2,29 +2,28 @@
   width: 100%;
   height: 1500px;
   background-repeat: no-repeat;
-  background-image: url('/assets/sekcijaSlika1.jpg');
-  background-size: cover; 
+  background-image: url("/assets/sekcijaSlika1.jpg");
+  background-size: cover;
   display: flex;
   flex-direction: column;
   align-items: center;
   @media (max-width: 450px) {
     height: fit-content;
-  }	
+  }
 }
 
 .text-wrapper {
   color: white;
   text-align: left;
   margin-top: 100px;
-
 }
 .grid-row {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); // This creates 3 columns
-  justify-items: center; // This centers the children horizontally
+  grid-template-columns: repeat(3, 1fr); 
+  justify-items: center; 
 }
 .parent-container {
-  position: relative; // Add this line
+  position: relative; 
 }
 
 .right-image {
@@ -36,9 +35,9 @@
   z-index: 2;
   @media (max-width: 450px) {
     top: -118%;
-    right: -37%;
+    right: -47%;
     height: 70%;
-  } 
+  }
 }
 
 .centered-text {
@@ -48,7 +47,7 @@
   @media (max-width: 450px) {
     font-size: 30px;
     margin-right: 20px;
-  } 
+  }
 }
 
 .centered-text2 {
@@ -57,7 +56,7 @@
   color: #ececec;
   @media (max-width: 450px) {
     font-size: 17px;
-  } 
+  }
 }
 
 .white-box {
@@ -68,7 +67,7 @@
   @media (max-width: 450px) {
     height: fit-content;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-  } 
+  }
 }
 
 .contact-form {
@@ -77,20 +76,19 @@
   @media (max-width: 450px) {
     padding: 15px;
   }
-  
 }
 
 .form-headline {
   font-size: 1.4em;
   letter-spacing: 0em;
-  font-weight:600;
+  font-weight: 600;
   line-height: 0.5em;
   text-align: start;
   margin-bottom: 20px;
   @media (max-width: 450px) {
     line-height: 1.1em;
     font-size: 1.4em;
-  } 
+  }
 }
 
 @media (max-width: 450px) {
@@ -104,41 +102,42 @@
   display: flex;
   justify-content: space-between;
   margin-bottom: 20px;
-  font-family: 'WixMadeforDisplay-VariableFont_wght', sans-serif;
-  
+  font-family: "WixMadeforDisplay-VariableFont_wght", sans-serif;
+
   @media (max-width: 450px) {
     flex-direction: column;
   }
-
 }
 
 .col-lg-5 {
-  flex: 0 0 calc(50% - 10px); // Subtract 10px for the gap between columns
+  flex: 0 0 calc(50% - 10px);
 }
 
 .col-lg-10 {
   flex: 0 0 100%;
 }
 
-input, textarea {
+input,
+textarea {
   width: 100%;
   padding: 10px;
   box-sizing: border-box;
-  border: none; // Remove the border
-  background-color: #dbe8e8; // Add a light green background
+  border: none; 
+  background-color: #dbe8e8; 
 }
-input:hover, textarea:hover {
-  background-color: #f8eba8; // light yellow
+input:hover,
+textarea:hover {
+  background-color: #f8eba8; 
 }
 
 textarea {
-  height: 100px; // Adjust this value as needed
+  height: 100px; 
 }
 
 .button-wrapper {
   display: flex;
   justify-content: center;
-  margin-top: 20px; // Add some space above the button
+  margin-top: 20px; 
 }
 
 .submit-button {
@@ -150,7 +149,7 @@ textarea {
   font-size: 15px;
   font-weight: bold;
   cursor: pointer;
-  
+
   &:hover {
     background-color: #5b92ac;
   }
@@ -232,48 +231,45 @@ div.item:nth-of-type(3) {
   font-size: 1em;
   color: #565656;
 }
-.white-box-carousel-mobile{
+.white-box-carousel-mobile {
   height: fit-content;
   background-color: white;
   padding: 15px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-  
 }
-.Card1_Headliner_mobile{
+.Card1_Headliner_mobile {
   font-size: 1.4em;
   font-weight: bold;
   color: #565656;
   text-align: center;
   margin-bottom: 20px;
   padding-bottom: 10px;
-  
 }
 
-.Card2_Headliner_mobile, .Card3_Headliner_mobile{
+.Card2_Headliner_mobile,
+.Card3_Headliner_mobile {
   font-size: 1.4em;
   font-weight: bold;
   color: #565656;
   text-align: center;
-  
-
 }
-.Card1_p_mobileP{
+.Card1_p_mobileP {
   font-size: 17px;
   font-weight: lighter;
   color: #565656;
-  font-family: 'WixMadeforDisplay-VariableFont_wght', sans-serif;
+  font-family: "WixMadeforDisplay-VariableFont_wght", sans-serif;
   text-align: center;
   margin-bottom: 30px;
 }
-.Card1_p_mobile{
+.Card1_p_mobile {
   font-size: 17px;
   font-weight: lighter;
   color: #565656;
-  font-family: 'WixMadeforDisplay-VariableFont_wght', sans-serif;
+  font-family: "WixMadeforDisplay-VariableFont_wght", sans-serif;
   text-align: center;
   margin-bottom: 10px;
 }
-.Card2_p_mobile{
+.Card2_p_mobile {
   font-size: 17px;
   color: #565656;
   text-align: left;
@@ -281,7 +277,7 @@ div.item:nth-of-type(3) {
   padding: 10px;
   text-align: justify;
 }
-.Card3_p_mobile{
+.Card3_p_mobile {
   font-size: 17px;
   color: #565656;
   text-align: left;
@@ -289,7 +285,7 @@ div.item:nth-of-type(3) {
   padding: 10px;
   text-align: justify;
 }
-.gumb_mobile{
+.gumb_mobile {
   width: 114px;
   height: 40px;
   background-color: #3e83a4;
@@ -299,23 +295,21 @@ div.item:nth-of-type(3) {
   font-weight: bold;
   cursor: pointer;
 }
-.container_margina{
+.container_margina {
   @media (max-width: 450px) {
     margin-left: 20px;
     margin-right: 20px;
   }
-  
 }
-.callUsButton{
-    background-color: #3e83a4;
-    color: #ececec;
-    border: none;
-    width: 250px;
-    border-radius: 0;
-    height: 50px;
-
+.callUsButton {
+  background-color: #3e83a4;
+  color: #ececec;
+  border: none;
+  width: 250px;
+  border-radius: 0;
+  height: 50px;
 }
-.gumb{
+.gumb {
   background-color: #3e83a4;
   color: #ececec;
   border: none;

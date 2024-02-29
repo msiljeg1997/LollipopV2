@@ -2,14 +2,14 @@
     width: 100vw;
     height: 500px;
     background-repeat: no-repeat;
-    background-image: url('/assets/SectionEquipmentSlika1.jpeg');
-    background-size: 100% 100%; 
+    background-image: url("/assets/SectionEquipmentSlika1.jpeg");
+    background-size: 100% 100%;
     object-fit: cover;
     z-index: 2;
     background-position: center;
     @media (max-width: 450px) {
         height: 520px;
-        background-size: 100% 100%; 
+        background-size: 100% 100%;
     }
 }
 
@@ -19,7 +19,7 @@
     left: 45%;
     transform: translate(-50%, -50%);
     color: #ececec;
-    font-family: 'WixMadeforDisplay-VariableFont_wght', sans-serif;
+    font-family: "WixMadeforDisplay-VariableFont_wght", sans-serif;
     text-align: left;
     width: 680px;
     z-index: 3;
@@ -34,11 +34,10 @@
 .centered-text {
     font-size: 50px;
     color: #ececec;
-    font-family: 'WixMadeforDisplay-VariableFont_wght', sans-serif;
+    font-family: "WixMadeforDisplay-VariableFont_wght", sans-serif;
     @media (max-width: 450px) {
         font-size: 35px;
         padding-right: 80px;
-
     }
 }
 
@@ -46,34 +45,35 @@
     font-size: 17px;
     line-height: 1.4em;
     color: #ececec;
-    font-family: 'WixMadeforDisplay-VariableFont_wght', sans-serif;
+    font-family: "WixMadeforDisplay-VariableFont_wght", sans-serif;
 }
-.section1-wrapper, .section2-wrapper {
+.section1-wrapper,
+.section2-wrapper {
     position: relative;
     width: 100vw;
 }
-.opremaContainer{
+.opremaContainer {
     padding-top: 50px;
 }
 .section_slika_services2 {
     width: 100vw;
     height: 650px;
     background-repeat: no-repeat;
-    background-image: url('/assets/sectionServicesSlika2.jpeg');
-    background-size: 100% 100%; 
+    background-image: url("/assets/sectionServicesSlika2.jpeg");
+    background-size: 100% 100%;
     background-position: center;
     @media (max-width: 450px) {
         height: auto;
-        background-repeat:repeat-y;
-        background-size: 100%; 
+        background-repeat: repeat-y;
+        background-size: 100%;
     }
 }
-.equipment_text_wrapper{
+.equipment_text_wrapper {
     height: auto;
     width: 235px;
     margin-top: 20px;
     color: #565656;
-    font-family: 'WixMadeforDisplay-VariableFont_wght', sans-serif;
+    font-family: "WixMadeforDisplay-VariableFont_wght", sans-serif;
 }
 .equipment_col_wrapper {
     display: flex;
@@ -83,23 +83,23 @@
 }
 @each $i in 1, 2, 3, 4, 5 {
     .equipment_slika#{$i} {
-        background-image: url('/assets/Equipment_okrugle_#{$i}.jpeg');
+        background-image: url("/assets/Equipment_okrugle_#{$i}.jpeg");
         border-radius: 50%;
         height: 115px;
         width: 115px;
-        background-size: 100% 100%; 
+        background-size: 100% 100%;
         background-position: center;
     }
 }
-.equipment_textHeader{
- text-align: center;
- margin-left: 10px;
- font-weight: bold;
+.equipment_textHeader {
+    text-align: center;
+    margin-left: 10px;
+    font-weight: bold;
 }
-.equipment_textP{
-margin-left: 10px;
+.equipment_textP {
+    margin-left: 10px;
 }
-.transparentElementSauger{
+.transparentElementSauger {
     position: relative;
     top: -64%;
     right: 200%;
@@ -109,7 +109,7 @@ margin-left: 10px;
     z-index: 2;
     transform: scaleX(-1);
 }
-.transparentElementSpricaljka{
+.transparentElementSpricaljka {
     position: relative;
     top: -15%;
     right: -120%;
@@ -119,8 +119,9 @@ margin-left: 10px;
     height: 35%;
     z-index: 2;
 }
-.transparentElementSauger, .transparentElementSpricaljka {
-    @media(max-width: 990px) {
-      display: none;
+.transparentElementSauger,
+.transparentElementSpricaljka {
+    @media (max-width: 990px) {
+        display: none;
     }
-  }
+}

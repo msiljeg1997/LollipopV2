@@ -1,32 +1,33 @@
 <div class="section1-wrapper">
-    <div class="section_slika_services"  [style.background-size]="backgroundSize">
-        <div class="text-wrapper">
-            <p class="centered-text">O nama</p>
-            <p class="centered-text2">Lorem ipsum dolor sit amet. Et totam quas eum tenetur molestiae in nobis quia ex officia sunt est galisum rerum sit quia repellendus ut iste fugiat. Aut sunt voluptatem ea libero fuga qui molestiae animi. Et minima rerum aut autem blanditiis vel tempora architecto aut sint magnam.</p>               
-</div>
+  <div class="section_slika_services" [style.background-size]="backgroundSize">
+    <div class="text-wrapper">
+      <p class="centered-text">O nama</p>
+      <p class="centered-text2">Lorem ipsum dolor sit amet. Et totam quas eum tenetur molestiae in nobis quia ex officia
+        sunt est galisum rerum sit quia repellendus ut iste fugiat. Aut sunt voluptatem ea libero fuga qui molestiae
+        animi. Et minima rerum aut autem blanditiis vel tempora architecto aut sint magnam.</p>
     </div>
+  </div>
 </div>
 <div class="section2-wrapper ">
-    <div *ngIf="!isMobile" class="section_slika_services2">
-      <div class="container ">
-        <div class="row pt-5 pb-5" style="height: fit-content;">
-          <div class="col-lg-12">
-            <app-carousel></app-carousel>
-          </div>
+  <div *ngIf="!isMobile" class="section_slika_services2">
+    <div class="container ">
+      <div class="row pt-5 pb-5" style="height: fit-content;">
+        <div class="col-lg-12">
+          <app-carousel></app-carousel>
         </div>
       </div>
-
-      </div>
-      <div *ngIf="isMobile">
-        <div class="container">
-          <div class="row pt-5 pb-5" style="height: fit-content;">
-            <div class="col-lg-12">
-              <app-carousel></app-carousel>
-            </div>
-          </div>
-        </div>
-  
-        </div>
-      
-
     </div>
+  </div>
+  <div *ngIf="isMobile">
+    <div class="container">
+      <div class="row pt-5 pb-5" style="height: fit-content;">
+        <div class="col-lg-12">
+          <app-carousel></app-carousel>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+</div>

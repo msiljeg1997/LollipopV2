@@ -1,5 +1,5 @@
 .main-container {
-    min-height: 100vh; // This makes sure the container takes at least the full height of the viewport
+    height: fit-content;
     width: auto;
 }
 
@@ -16,8 +16,7 @@
 }
 
 .content {
-    overflow: auto;
     @media (max-width: 450px) {
         overflow: hidden;
-    } 
+    }
 }

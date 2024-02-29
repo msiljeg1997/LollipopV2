@@ -11,15 +11,12 @@ import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 })
 export class CarouselComponent {
 
-  
   constructor(private modalService: NgbModal) { }
-
 
   images = [1,2,3].map((n) => `/assets/slika${n}.jpeg`);
   showNavigationIndicators = true;
   showNavigationArrows = true;
   selectedImage: string = '';
-
 
   openLargerImage(img: any) {
     this.modalService.open({ size: 'lg' });
