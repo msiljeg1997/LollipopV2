@@ -1,4 +1,5 @@
 import { Component, HostListener } from '@angular/core';
+import { NgbCarouselModule } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
   selector: 'app-gallery',
@@ -7,6 +8,7 @@ import { Component, HostListener } from '@angular/core';
 })
 export class GalleryComponent {
   backgroundSize: string = '980px';
+  isMobile = window.innerWidth < 450;
   
   @HostListener('window:resize', ['$event'])
   onResize(event: Event) {

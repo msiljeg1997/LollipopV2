@@ -1,0 +1,68 @@
+
+ngb-carousel {
+    width: 100%;   // Make the carousel take up the full width of its container
+    height: 100%;   // Make the carousel take up the full height of its container
+
+    .picsum-img-wrapper {
+        width: 100%;
+        height: 100%; 
+
+        img {
+            width: 100%;
+            height: 720px;
+            object-fit: fill;
+        }
+        
+        @media (max-width: 1200px) {
+            img {
+                width: 100%;
+                height: 600px;
+            }
+        }
+        
+        @media (max-width: 992px) {
+            img {
+                width: 100%;
+                height: 500px;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            img {
+                width: 100%;
+                height: 400px;
+            }
+        }
+        
+        @media (max-width: 576px) {
+            img {
+                width: 100%;
+                height: 300px;
+            }
+        }
+    }
+
+    .carousel-caption {
+        h3 {
+            color: rgb(0, 0, 0);  // Change this to the color you want for the h3 elements
+        }
+
+        p {
+            color: rgb(0, 0, 0);  // Change this to the color you want for the p elements
+        }
+    }
+}
+ngb-carousel::ng-deep .carousel-control-prev-icon,
+ngb-carousel::ng-deep .carousel-control-next-icon {
+    transform: scale(3);
+    position: relative;
+   filter: invert(1);
+}
+
+::ng-deep .carousel-control-prev-icon {
+    left: -150px;  // Adjust this value to move the left arrow
+}
+
+::ng-deep .carousel-control-next-icon {
+    right: -150px;  // Adjust this value to move the right arrow
+}

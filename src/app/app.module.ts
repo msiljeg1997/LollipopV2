@@ -12,6 +12,10 @@ import { EquipmentComponent } from './equipment/equipment.component';
 import { FooterComponent } from './footer/footer.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ServicesComponent } from './services/services.component';
+import { CarouselNavigationComponent } from './carousel-navigation/carousel-navigation.component';
+import { CarouselComponent } from './carousel/carousel.component';
+import { NgbCarouselModule } from '@ng-bootstrap/ng-bootstrap';
+import { NgIf } from '@angular/common';
 
 
 @NgModule({
@@ -24,11 +28,15 @@ import { ServicesComponent } from './services/services.component';
     EquipmentComponent,
     FooterComponent,
     ServicesComponent,
+    CarouselNavigationComponent,
+    CarouselComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule
+    NgbModule,
+    NgbCarouselModule,
+    NgIf
   ],
   providers: [],
   bootstrap: [AppComponent]
