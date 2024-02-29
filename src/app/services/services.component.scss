@@ -11,6 +11,10 @@
     object-fit: cover;
     z-index: 2;
     background-position: center;
+    @media (max-width: 450px) {
+        height: 520px;
+        background-size: 100% 100%; 
+    }
 }
 
 .text-wrapper {
@@ -22,6 +26,13 @@
     text-align: left;
     width: 680px;
     z-index: 3;
+    @media (max-width: 450px) {
+        width: 100%;
+        top: 48%;
+        left: 50%;
+        padding: 25px;
+        transform: translate(-50%, -30%);
+    }
 }
 .moco_element_uWrapperTextu{
         position: absolute;
@@ -31,14 +42,25 @@
         width: auto;
         height: 200%;
         z-index: 9999;
+        @media (max-width: 450px) {
+            top: -20%;
+            right: -5%;
+            height: 70%;
+        }
 }
 
 .centered-text {
     font-size: 50px;
+    @media (max-width: 450px) {
+        font-size: 35px;
+        padding-right: 80px;
+        line-height: 1em;
+    }
 }
 
 .centered-text2 {
-    font-size: 20px;
+    font-size: 17px;
+    line-height: 1.4em;
 }
 
 .section_slika_services2 {
@@ -48,6 +70,11 @@
     background-image: url('/assets/sectionServicesSlika2.jpeg');
     background-size: 100% 100%; 
     background-position: center;
+    @media (max-width: 450px) {
+        height: auto;
+        background-repeat:repeat-y;
+        background-size: 100%; 
+    }
 }
 
 .section1-wrapper, .section2-wrapper {
