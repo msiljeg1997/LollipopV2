@@ -1,4 +1,4 @@
-.container{
+.container {
     height: fit-content;
 }
 
@@ -6,14 +6,14 @@
     width: 100vw;
     height: 500px;
     background-repeat: no-repeat;
-    background-image: url('/assets/sectionServicesSlika1.jpeg');
-    background-size: 100% 100%; 
+    background-image: url("/assets/sectionServicesSlika1.jpeg");
+    background-size: 100% 100%;
     object-fit: cover;
     z-index: 2;
     background-position: center;
     @media (max-width: 450px) {
         height: 520px;
-        background-size: 100% 100%; 
+        background-size: 100% 100%;
     }
 }
 
@@ -34,19 +34,19 @@
         transform: translate(-50%, -30%);
     }
 }
-.moco_element_uWrapperTextu{
-        position: absolute;
-        top: -16%;
-        right: -40%;
-        transform: translateY(-50%);
-        width: auto;
-        height: 200%;
-        z-index: 9999;
-        @media (max-width: 450px) {
-            top: -20%;
-            right: -10%;
-            height: 87%;
-        }
+.moco_element_uWrapperTextu {
+    position: absolute;
+    top: -16%;
+    right: -40%;
+    transform: translateY(-50%);
+    width: auto;
+    height: 200%;
+    z-index: 9999;
+    @media (max-width: 450px) {
+        top: -20%;
+        right: -10%;
+        height: 87%;
+    }
 }
 
 .centered-text {
@@ -57,7 +57,6 @@
         padding-right: 80px;
         font-size: 30px;
         margin-right: 20px;
-
     }
 }
 
@@ -67,61 +66,62 @@
     color: #ececec;
     @media (max-width: 450px) {
         font-size: 17px;
-      } 
+    }
 }
 
 .section_slika_services2 {
     width: 100vw;
     height: 1230px;
     background-repeat: no-repeat;
-    background-image: url('/assets/sectionServicesSlika2.jpeg');
-    background-size: 100% 100%; 
+    background-image: url("/assets/sectionServicesSlika2.jpeg");
+    background-size: 100% 100%;
     background-position: center;
     @media (max-width: 450px) {
         height: auto;
-        background-repeat:repeat-y;
-        background-size: 100%; 
+        background-repeat: repeat-y;
+        background-size: 100%;
     }
 }
 
-.section1-wrapper, .section2-wrapper {
+.section1-wrapper,
+.section2-wrapper {
     position: relative;
     width: 100vw;
     height: fit-content;
 }
-.myColPics{
-    height: 270px; 
-    width: 450px; 
+.myColPics {
+    height: 270px;
+    width: 450px;
 }
-.myColText{
-    height: 270px; 
-    width: 450px; 
+.myColText {
+    height: 270px;
+    width: 450px;
 }
-.myColPics1{
-    background-image: url('/assets/sectionServicesGrid1.jpeg');
+.myColPics1 {
+    background-image: url("/assets/sectionServicesGrid1.jpeg");
     background-repeat: no-repeat;
-    background-size: cover; 
+    background-size: cover;
     background-position: center;
 }
-.myColPics2{
-    background-image: url('/assets/sectionServicesGrid2.jpeg');
+.myColPics2 {
+    background-image: url("/assets/sectionServicesGrid2.jpeg");
     background-repeat: no-repeat;
-    background-size: cover; 
+    background-size: cover;
     background-position: center;
 }
-.myColPics3{
-    background-image: url('/assets/sectionServicesGrid3.jpeg');
+.myColPics3 {
+    background-image: url("/assets/sectionServicesGrid3.jpeg");
     background-repeat: no-repeat;
-    background-size: cover; 
+    background-size: cover;
     background-position: center;
 }
-.myColPics4{
-    background-image: url('/assets/sectionServicesGrid4.jpeg');
+.myColPics4 {
+    background-image: url("/assets/sectionServicesGrid4.jpeg");
     background-repeat: no-repeat;
-    background-size: cover; 
+    background-size: cover;
     background-position: center;
 }
-.myPGridLeft{
+.myPGridLeft {
     position: relative;
     top: 90%;
     left: 50%;
@@ -132,11 +132,11 @@
     font-size: 35px;
     z-index: 3;
     @media (max-width: 450px) {
-        font-size: 20px; 
+        font-size: 20px;
         line-height: 2;
     }
 }
-.myPGridRight{
+.myPGridRight {
     position: relative;
     top: 90%;
     left: 50%;
@@ -147,12 +147,12 @@
     font-size: 35px;
     z-index: 3;
     @media (max-width: 450px) {
-        font-size: 20px; 
+        font-size: 20px;
         line-height: 2;
     }
 }
 
-.myPGridRightRadovi{
+.myPGridRightRadovi {
     position: relative;
     top: 80%;
     left: 50%;
@@ -164,22 +164,23 @@
     z-index: 3;
     line-height: 1.2;
     @media (max-width: 450px) {
-        font-size: 20px; 
-        top:90%;
+        font-size: 20px;
+        top: 90%;
         line-height: 2;
     }
 }
-.myPTextGridRight, .myPTextGridLeft{
+.myPTextGridRight,
+.myPTextGridLeft {
     color: #565656;
-    font-family: 'WixMadeforDisplay-VariableFont_wght', sans-serif;
+    font-family: "WixMadeforDisplay-VariableFont_wght", sans-serif;
     @media (max-width: 450px) {
-        font-size: 17px; 
-        top:90%;
+        font-size: 17px;
+        top: 90%;
         line-height: 1.7em;
     }
 }
 
-.myPTextGridWrapper{
+.myPTextGridWrapper {
     position: relative;
     top: 50%;
     left: 50%;

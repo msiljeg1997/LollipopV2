@@ -57,7 +57,7 @@
 }
 .section_slika_services2 {
     width: 100vw;
-    height: 650px;
+    height: fit-content; // TO SUTRA MJENJAT TO SUTRA MJENJAT TO SUTRA MJENJAT TO SUTRA MJENJAT TO SUTRA MJENJAT TO SUTRA MJENJAT TO SUTRA MJENJAT TO SUTRA MJENJAT TO SUTRA MJENJAT
     background-repeat: no-repeat;
     background-image: url("/assets/sectionServicesSlika2.jpeg");
     background-size: 100% 100%;
@@ -79,7 +79,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column; // This is to ensure the items are stacked vertically
+    flex-direction: column;
 }
 @each $i in 1, 2, 3, 4, 5 {
     .equipment_slika#{$i} {

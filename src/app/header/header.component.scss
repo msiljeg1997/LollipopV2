@@ -8,46 +8,46 @@
 a {
     color: black;
 }
-.logo{
-    width: 200px;  
+.logo {
+    width: 200px;
     height: auto;
     @media (max-width: 450px) {
         width: 150px;
         height: auto;
+    }
 }
-}
-.container-fluid{
+.container-fluid {
     margin-left: 0px !important;
     margin-right: 0px !important;
     padding-left: 0px !important;
-    padding-right: 0px !important; 
+    padding-right: 0px !important;
 }
 .nav-link {
-    font-family: 'WixMadeforDisplay-VariableFont_wght', sans-serif;
+    font-family: "WixMadeforDisplay-VariableFont_wght", sans-serif;
     color: #565656;
-  
-    &:hover {
-      font-weight: bold;
-    }
-  }
 
-.header_color{
+    &:hover {
+        font-weight: bold;
+    }
+}
+
+.header_color {
     height: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #f2f2f2 ;
+    background-color: #f2f2f2;
     @media (max-width: 450px) {
         height: 80px;
+    }
 }
+.header {
+    background-color: #f2f2f2;
 }
-.header{
-    background-color: #f2f2f2 ;
-}
-.container-navbar{
+.container-navbar {
     width: 1000px !important;
 }
-.gumb{
+.gumb {
     background-color: #3e83a4;
     color: white;
     border: none;
