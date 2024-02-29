@@ -1,5 +1,6 @@
 .main-container {
     min-height: 100vh; // This makes sure the container takes at least the full height of the viewport
+    width: auto;
 }
 
 .d-flex {
@@ -15,5 +16,8 @@
 }
 
 .content {
-    overflow: auto; // This makes sure the content is scrollable if it exceeds the available space
+    overflow: auto;
+    @media (max-width: 450px) {
+        overflow: hidden;
+    } 
 }

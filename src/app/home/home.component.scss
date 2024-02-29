@@ -7,12 +7,15 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  @media (max-width: 450px) {
+    height: fit-content;
+  }	
 }
 
 .text-wrapper {
   color: white;
   text-align: left;
-  margin-top: 150px;
+  margin-top: 100px;
   margin-right: 100px;
 }
 .grid-row {
@@ -31,14 +34,26 @@
   width: auto;
   height: 130%;
   z-index: 2;
+  @media (max-width: 450px) {
+    top: -118%;
+    right: -35%;
+    height: 70%;
+  } 
 }
 
 .centered-text {
   font-size: 50px;
+  @media (max-width: 450px) {
+    font-size: 30px;
+    margin-right: 20px;
+  } 
 }
 
 .centered-text2 {
   font-size: 20px;
+  @media (max-width: 450px) {
+    font-size: 15px;
+  } 
 }
 
 .white-box {
@@ -46,6 +61,10 @@
   background: white;
   box-sizing: border-box;
   margin-top: 50px;
+  @media (max-width: 450px) {
+    height: 420px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  } 
 }
 
 .contact-form {
@@ -58,6 +77,9 @@
   font-weight: bold;
   text-align: start;
   margin-bottom: 20px;
+  @media (max-width: 450px) {
+    line-height: 1.1em;
+  } 
 }
 
 .form-row {
@@ -156,4 +178,66 @@ div.item:nth-of-type(3) {
   font-size: 1em;
   color: rgb(0, 0, 0);
   padding: 10px;
+}
+.white-box-carousel-mobile{
+  height: fit-content;
+  background-color: white;
+  padding: 50px;
+  padding-top: 25px !important;
+  padding-bottom: 25px !important;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  
+}
+.Card1_Headliner_mobile, .Card2_Headliner_mobile, .Card3_Headliner_mobile{
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  
+}
+.Card1_p_mobileP{
+ line-height: 2em;
+}
+.Card1_p_mobile{
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.Card2_p_mobile{
+  font-size: 17px;
+  text-align: left;
+  margin-bottom: 10px;
+}
+.Card3_p_mobile{
+  font-size: 17px;
+  text-align: left;
+  margin-bottom: 10px;
+}
+.gumb_mobile{
+  width: 114px;
+  height: 35px;
+  background-color: #3e83a4;
+  border: none;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 25px;
+  
+}
+.container_margina{
+  @media (max-width: 450px) {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  
+}
+.callUsButton{
+    background-color: #3e83a4;
+    color: white;
+    border: none;
+    width: 250px;
+    border-radius: 0;
+    height: 50px;
+
 }

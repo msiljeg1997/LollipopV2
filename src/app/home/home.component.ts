@@ -15,12 +15,15 @@ export class HomeComponent {
     const rightImage = this.el.nativeElement.querySelector('.right-image');
   
     if (rightImage) {
-      if (width < 770) {
+      if (width < 430) {
+        this.renderer.setStyle(rightImage, 'display', 'block');
+        this.renderer.setStyle(rightImage, 'top', '0');
+      } else if (width >= 430 && width < 770) {
         this.renderer.setStyle(rightImage, 'display', 'none');
-      } else if (width <= 995 && width >= 766) {
+      } else if (width >= 770 && width <= 995) {
         this.renderer.setStyle(rightImage, 'display', 'block');
         this.renderer.setStyle(rightImage, 'right', '-35%');
-      } else if (width <= 1200 && width > 920) {
+      } else if (width > 995 && width <= 1200) {
         this.renderer.setStyle(rightImage, 'display', 'block');
         this.renderer.setStyle(rightImage, 'right', '-50%');
       } else {

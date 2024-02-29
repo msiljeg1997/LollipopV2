@@ -1,3 +1,7 @@
+.container{
+    height: fit-content;
+}
+
 .section_slika_services {
     width: 100vw;
     height: 500px;
@@ -49,6 +53,7 @@
 .section1-wrapper, .section2-wrapper {
     position: relative;
     width: 100vw;
+    height: fit-content;
 }
 .myColPics{
     height: 270px; 
