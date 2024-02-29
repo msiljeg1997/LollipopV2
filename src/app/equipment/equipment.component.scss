@@ -18,7 +18,7 @@
     top: 70%;
     left: 45%;
     transform: translate(-50%, -50%);
-    color: white;
+    color: #ececec;
     text-align: left;
     width: 680px;
     z-index: 3;
@@ -32,16 +32,18 @@
 }
 .centered-text {
     font-size: 50px;
+    color: #ececec;
     @media (max-width: 450px) {
         font-size: 35px;
         padding-right: 80px;
-        line-height: 1em;
+
     }
 }
 
 .centered-text2 {
     font-size: 17px;
     line-height: 1.4em;
+    color: #ececec;
 }
 .section1-wrapper, .section2-wrapper {
     position: relative;
@@ -67,6 +69,7 @@
     height: auto;
     width: 235px;
     margin-top: 20px;
+    color: #565656;
 }
 .equipment_col_wrapper {
     display: flex;
