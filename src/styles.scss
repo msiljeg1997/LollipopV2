@@ -1,6 +1,19 @@
 /* You can add global styles to this file, and also import other style files */
+
+
+@font-face {
+    font-family: 'MyFont';
+    src: url('/assets/WixMadeforDisplay-VariableFont_wght.ttf');
+  }
+
+  $global-font-color-black: #333; 
+
+
 .main-container {
     min-height: 60vh;
 
 }
 
+body {
+    font-family: 'WixMadeforDisplay-VariableFont_wght', sans-serif;
+}

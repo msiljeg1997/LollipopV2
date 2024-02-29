@@ -22,7 +22,7 @@
     top: 70%;
     left: 45%;
     transform: translate(-50%, -50%);
-    color: white;
+    color: #ececec;
     text-align: left;
     width: 680px;
     z-index: 3;
@@ -44,23 +44,30 @@
         z-index: 9999;
         @media (max-width: 450px) {
             top: -20%;
-            right: -5%;
-            height: 70%;
+            right: -10%;
+            height: 87%;
         }
 }
 
 .centered-text {
     font-size: 50px;
+    font-weight: bold;
+    color: #ececec;
     @media (max-width: 450px) {
-        font-size: 35px;
         padding-right: 80px;
-        line-height: 1em;
+        font-size: 30px;
+        margin-right: 20px;
+        line-height: 1.2;
     }
 }
 
 .centered-text2 {
-    font-size: 17px;
-    line-height: 1.4em;
+    font-size: 20px;
+    font-weight: lighter;
+    color: #ececec;
+    @media (max-width: 450px) {
+        font-size: 17px;
+      } 
 }
 
 .section_slika_services2 {
@@ -119,7 +126,7 @@
     top: 90%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: white;
+    color: #ececec;
     text-align: left;
     width: 100%;
     font-size: 35px;
@@ -134,7 +141,7 @@
     top: 90%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: white;
+    color: #ececec;
     text-align: right;
     width: 100%;
     font-size: 35px;
@@ -150,7 +157,7 @@
     top: 80%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: white;
+    color: #ececec;
     text-align: right;
     width: 100%;
     font-size: 35px;
@@ -162,17 +169,29 @@
         line-height: 2;
     }
 }
+.myPTextGridRight, .myPTextGridLeft{
+    color: #565656;
+    font-family: 'WixMadeforDisplay-VariableFont_wght', sans-serif;
+    @media (max-width: 450px) {
+        font-size: 17px; 
+        top:90%;
+        line-height: 1.7em;
+    }
+}
 
 .myPTextGridWrapper{
     position: relative;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: rgb(39, 37, 37);
+    color: #565656;
     width: 100%;
     font-size: 20px;
     z-index: 3;
     line-height: 1.2;
     padding: 5px;
     font-weight: lighter;
+    @media (max-width: 450px) {
+        padding: 30px;
+    }
 }
