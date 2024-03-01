@@ -79,8 +79,38 @@
         </div>
         <div class="container-fluid" style="padding-left: 0px !important; padding-right: 0px !important;">
             <div class="new_section" [style.background-size]="backgroundSize">
-                <div class="text-wrapper d-flex justify-content-center">
-
+                <div class="row d-flex justify-content-center">
+                    <div class="col-lg-5">
+                        <div class="parent-container">
+                            <div class="white-box" whiteBox>
+                                <form class="contact-form" [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+                                    <p class="form-headline">Kontaktirajte nas i zatražite ponudu</p>
+                                    <div class="form-row">
+                                        <div class="col-lg-5 col-12">
+                                            <label for="contact-number">Kontakt broj</label>
+                                            <input type="tel" id="contact-number" formControlName="contactNumber"
+                                                placeholder="Kontakt broj">
+                                        </div>
+                                        <div class="col-lg-5 col-12">
+                                            <label for="email">Email</label>
+                                            <input type="email" id="email" formControlName="email"
+                                                placeholder="email@example.com">
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="col-lg-10 col-12">
+                                            <label for="message">Vaša poruka</label>
+                                            <textarea id="message" rows="4" formControlName="message"
+                                                placeholder="Napišite upit"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="button-wrapper">
+                                        <button type="submit" class="submit-button">Pošalji</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

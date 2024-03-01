@@ -137,8 +137,108 @@
     z-index: 2;
     background-position: center;
     @media (max-width: 450px) {
-        height: 520px;
+        height: 550px;
         background-size: 100% 100%;
     }
 }
 
+.parent-container {
+    position: relative; 
+  }
+  .white-box {
+    height: 390px;
+    background: rgba(255, 255, 255, 0);
+    box-sizing: border-box;
+    margin-top: 50px;
+    @media (max-width: 450px) {
+      height: fit-content;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    }
+  }
+
+  .contact-form {
+    width: 100%;
+    padding: 30px;
+    @media (max-width: 450px) {
+      padding: 15px;
+    }
+  }
+
+  
+.form-headline {
+    font-size: 1.4em;
+    letter-spacing: 0em;
+    font-weight: 600;
+    text-align: start;
+    margin-bottom: 20px;
+    color: #ececec;
+    @media (max-width: 450px) {
+      font-size: 1.4em;
+    }
+  }
+  
+  @media (max-width: 450px) {
+    .contact-form label {
+      margin-bottom: 10px;
+      font-weight: bold;
+    }
+  }
+  
+  .form-row {
+    color: #ececec;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    font-family: "WixMadeforDisplay-VariableFont_wght", sans-serif;
+  
+    @media (max-width: 450px) {
+      flex-direction: column;
+    }
+  }
+  
+  
+  .contact-form .col-lg-5 {
+    flex: 0 0 calc(50% - 10px);
+}
+
+.contact-form .col-lg-10 {
+    flex: 0 0 100%;
+}
+  
+  input,
+  textarea {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: none; 
+    background-color: #dbe8e8; 
+  }
+  input:hover,
+  textarea:hover {
+    background-color: #f8eba8; 
+  }
+  
+  textarea {
+    height: 100px; 
+  }
+  
+  .button-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px; 
+  }
+  
+  .submit-button {
+    width: 114px;
+    height: 40px;
+    background-color: #3e83a4;
+    border: none;
+    color: #ececec;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+  
+    &:hover {
+      background-color: #5b92ac;
+    }
+  }
