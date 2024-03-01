@@ -48,6 +48,14 @@
         height: 87%;
     }
 }
+@media (min-width: 450px) and (max-width: 809px) {
+    .moco_element_uWrapperTextu {
+      display: block;
+      top: -40px;
+      right: -75px;
+      height: 150%;
+    }
+  }
 
 .centered-text {
     font-size: 50px;
