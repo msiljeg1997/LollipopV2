@@ -4,7 +4,7 @@ import { FormGroup, FormControl } from '@angular/forms';
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
-  styleUrls: ['./home.component.scss']
+  styleUrls: ['./home.component.scss'],
 })
 export class HomeComponent {
   constructor(private renderer: Renderer2, private el: ElementRef) {}
@@ -20,7 +20,7 @@ export class HomeComponent {
   onResize(event: any) {
     const width = event.target.innerWidth;
     const rightImage = this.el.nativeElement.querySelector('.right-image');
-  
+
     if (rightImage) {
       if (width < 430) {
         this.renderer.setStyle(rightImage, 'display', 'block');
