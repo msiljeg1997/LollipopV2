@@ -57,19 +57,20 @@
 }
 .section_slika_services2 {
     width: 100vw;
-    height: fit-content; // TO SUTRA MJENJAT TO SUTRA MJENJAT TO SUTRA MJENJAT TO SUTRA MJENJAT TO SUTRA MJENJAT TO SUTRA MJENJAT TO SUTRA MJENJAT TO SUTRA MJENJAT TO SUTRA MJENJAT
+    max-height: fit-content; // TO SUTRA MJENJAT TO SUTRA MJENJAT TO SUTRA MJENJAT TO SUTRA MJENJAT TO SUTRA MJENJAT TO SUTRA MJENJAT TO SUTRA MJENJAT TO SUTRA MJENJAT TO SUTRA MJENJAT
     background-repeat: no-repeat;
+
     background-image: url("/assets/sectionServicesSlika2.jpeg");
     background-size: 100% 100%;
     background-position: center;
     @media (max-width: 450px) {
         height: auto;
         background-repeat: repeat-y;
-        background-size: 100%;
+        background-size: cover;
     }
 }
 .equipment_text_wrapper {
-    height: auto;
+    height: 200px;
     width: 235px;
     margin-top: 20px;
     color: #565656;
@@ -101,22 +102,22 @@
 }
 .transparentElementSauger {
     position: relative;
-    top: -64%;
-    right: 200%;
+    top: -230%;
+    right: 230%;
     transform: translateY(-50%);
     width: auto;
-    height: 80%;
+    height: 300%;
     z-index: 2;
     transform: scaleX(-1);
 }
 .transparentElementSpricaljka {
     position: relative;
-    top: -15%;
+    top: -65%;
     right: -120%;
     transform: scale(-1);
     transform: translateY(-50%) rotate(-15deg);
     width: auto;
-    height: 35%;
+    height: 190%;
     z-index: 2;
 }
 .transparentElementSauger,
@@ -125,3 +126,19 @@
         display: none;
     }
 }
+
+.new_section {
+    width: 100vw;
+    height: 500px;
+    background-repeat: no-repeat;
+    background-image: url("/assets/sectionFooterSlika.jpeg");
+    background-size: 100% 100%;
+    object-fit: cover;
+    z-index: 2;
+    background-position: center;
+    @media (max-width: 450px) {
+        height: 520px;
+        background-size: 100% 100%;
+    }
+}
+
