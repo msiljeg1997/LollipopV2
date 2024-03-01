@@ -1,244 +1,242 @@
 .section_slika_services {
-    width: 100vw;
-    height: 500px;
-    background-repeat: no-repeat;
-    background-image: url("/assets/SectionEquipmentSlika1.jpeg");
+  width: 100vw;
+  height: 500px;
+  background-repeat: no-repeat;
+  background-image: url("/assets/SectionEquipmentSlika1.jpeg");
+  background-size: 100% 100%;
+  object-fit: cover;
+  z-index: 2;
+  background-position: center;
+  @media (max-width: 450px) {
+    height: 520px;
     background-size: 100% 100%;
-    object-fit: cover;
-    z-index: 2;
-    background-position: center;
-    @media (max-width: 450px) {
-        height: 520px;
-        background-size: 100% 100%;
-    }
+  }
 }
 
 .text-wrapper {
-    position: relative;
-    top: 70%;
-    left: 45%;
-    transform: translate(-50%, -50%);
-    color: #ececec;
-    font-family: "WixMadeforDisplay-VariableFont_wght", sans-serif;
-    text-align: left;
-    width: 680px;
-    z-index: 3;
-    @media (max-width: 450px) {
-        width: 100%;
-        top: 48%;
-        left: 50%;
-        padding: 25px;
-        transform: translate(-50%, -30%);
-    }
+  position: relative;
+  top: 70%;
+  left: 45%;
+  transform: translate(-50%, -50%);
+  color: #ececec;
+  font-family: "WixMadeforDisplay-VariableFont_wght", sans-serif;
+  text-align: left;
+  width: 680px;
+  z-index: 3;
+  @media (max-width: 450px) {
+    width: 100%;
+    top: 48%;
+    left: 50%;
+    padding: 25px;
+    transform: translate(-50%, -30%);
+  }
 }
 .centered-text {
-    font-size: 50px;
-    color: #ececec;
-    font-family: "WixMadeforDisplay-VariableFont_wght", sans-serif;
-    @media (max-width: 450px) {
-        font-size: 35px;
-        padding-right: 80px;
-    }
+  font-size: 50px;
+  color: #ececec;
+  font-family: "WixMadeforDisplay-VariableFont_wght", sans-serif;
+  @media (max-width: 450px) {
+    font-size: 35px;
+    padding-right: 80px;
+  }
 }
 
 .centered-text2 {
-    font-size: 17px;
-    line-height: 1.4em;
-    color: #ececec;
-    font-family: "WixMadeforDisplay-VariableFont_wght", sans-serif;
+  font-size: 17px;
+  line-height: 1.4em;
+  color: #ececec;
+  font-family: "WixMadeforDisplay-VariableFont_wght", sans-serif;
 }
 .section1-wrapper,
 .section2-wrapper {
-    position: relative;
-    width: 100vw;
+  position: relative;
+  width: 100vw;
 }
 .opremaContainer {
-    padding-top: 50px;
+  padding-top: 50px;
 }
 .section_slika_services2 {
-    width: 100vw;
-    max-height: fit-content; // TO SUTRA MJENJAT TO SUTRA MJENJAT TO SUTRA MJENJAT TO SUTRA MJENJAT TO SUTRA MJENJAT TO SUTRA MJENJAT TO SUTRA MJENJAT TO SUTRA MJENJAT TO SUTRA MJENJAT
-    background-repeat: no-repeat;
+  width: 100vw;
+  max-height: fit-content; // TO SUTRA MJENJAT TO SUTRA MJENJAT TO SUTRA MJENJAT TO SUTRA MJENJAT TO SUTRA MJENJAT TO SUTRA MJENJAT TO SUTRA MJENJAT TO SUTRA MJENJAT TO SUTRA MJENJAT
+  background-repeat: no-repeat;
 
-    background-image: url("/assets/sectionServicesSlika2.jpeg");
-    background-size: 100% 100%;
-    background-position: center;
-    @media (max-width: 450px) {
-        height: auto;
-        background-repeat: repeat-y;
-        background-size: cover;
-    }
+  background-image: url("/assets/sectionServicesSlika2.jpeg");
+  background-size: 100% 100%;
+  background-position: center;
+  @media (max-width: 450px) {
+    height: auto;
+    background-repeat: repeat-y;
+    background-size: cover;
+  }
 }
 .equipment_text_wrapper {
-    height: 200px;
-    width: 235px;
-    margin-top: 20px;
-    color: #565656;
-    font-family: "WixMadeforDisplay-VariableFont_wght", sans-serif;
+  height: 200px;
+  width: 235px;
+  margin-top: 20px;
+  color: #565656;
+  font-family: "WixMadeforDisplay-VariableFont_wght", sans-serif;
 }
 .equipment_col_wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 @each $i in 1, 2, 3, 4, 5 {
-    .equipment_slika#{$i} {
-        background-image: url("/assets/Equipment_okrugle_#{$i}.jpeg");
-        border-radius: 50%;
-        height: 115px;
-        width: 115px;
-        background-size: 100% 100%;
-        background-position: center;
-    }
+  .equipment_slika#{$i} {
+    background-image: url("/assets/Equipment_okrugle_#{$i}.jpeg");
+    border-radius: 50%;
+    height: 115px;
+    width: 115px;
+    background-size: 100% 100%;
+    background-position: center;
+  }
 }
 .equipment_textHeader {
-    text-align: center;
-    margin-left: 10px;
-    font-weight: bold;
+  text-align: center;
+  margin-left: 10px;
+  font-weight: bold;
 }
 .equipment_textP {
-    margin-left: 10px;
+  margin-left: 10px;
 }
 .transparentElementSauger {
-    position: relative;
-    top: -230%;
-    right: 230%;
-    transform: translateY(-50%);
-    width: auto;
-    height: 300%;
-    z-index: 2;
-    transform: scaleX(-1);
+  position: relative;
+  top: -230%;
+  right: 230%;
+  transform: translateY(-50%);
+  width: auto;
+  height: 300%;
+  z-index: 2;
+  transform: scaleX(-1);
 }
 .transparentElementSpricaljka {
-    position: relative;
-    top: -65%;
-    right: -120%;
-    transform: scale(-1);
-    transform: translateY(-50%) rotate(-15deg);
-    width: auto;
-    height: 190%;
-    z-index: 2;
+  position: relative;
+  top: -65%;
+  right: -120%;
+  transform: scale(-1);
+  transform: translateY(-50%) rotate(-15deg);
+  width: auto;
+  height: 190%;
+  z-index: 2;
 }
 .transparentElementSauger,
 .transparentElementSpricaljka {
-    @media (max-width: 990px) {
-        display: none;
-    }
+  @media (max-width: 990px) {
+    display: none;
+  }
 }
 
 .new_section {
-    width: 100vw;
-    height: 500px;
-    background-repeat: no-repeat;
-    background-image: url("/assets/sectionFooterSlika.jpeg");
+  width: 100vw;
+  height: 500px;
+  background-repeat: no-repeat;
+  background-image: url("/assets/sectionFooterSlika.jpeg");
+  background-size: 100% 100%;
+  object-fit: cover;
+  z-index: 2;
+  background-position: center;
+  @media (max-width: 450px) {
+    height: 550px;
     background-size: 100% 100%;
-    object-fit: cover;
-    z-index: 2;
-    background-position: center;
-    @media (max-width: 450px) {
-        height: 550px;
-        background-size: 100% 100%;
-    }
+  }
 }
 
 .parent-container {
-    position: relative; 
-  }
-  .white-box {
-    height: 390px;
-    background: rgba(255, 255, 255, 0);
-    box-sizing: border-box;
-    margin-top: 50px;
-    @media (max-width: 450px) {
-      height: fit-content;
-      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-    }
-  }
-
-  .contact-form {
-    width: 100%;
-    padding: 30px;
-    @media (max-width: 450px) {
-      padding: 15px;
-    }
-  }
-
-  
-.form-headline {
-    font-size: 1.4em;
-    letter-spacing: 0em;
-    font-weight: 600;
-    text-align: start;
-    margin-bottom: 20px;
-    color: #ececec;
-    @media (max-width: 450px) {
-      font-size: 1.4em;
-    }
-  }
-  
+  position: relative;
+}
+.white-box {
+  height: 390px;
+  background: rgba(255, 255, 255, 0);
+  box-sizing: border-box;
+  margin-top: 50px;
   @media (max-width: 450px) {
-    .contact-form label {
-      margin-bottom: 10px;
-      font-weight: bold;
-    }
+    height: fit-content;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
   }
-  
-  .form-row {
-    color: #ececec;
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 20px;
-    font-family: "WixMadeforDisplay-VariableFont_wght", sans-serif;
-  
-    @media (max-width: 450px) {
-      flex-direction: column;
-    }
+}
+
+.contact-form {
+  width: 100%;
+  padding: 30px;
+  @media (max-width: 450px) {
+    padding: 15px;
   }
-  
-  
-  .contact-form .col-lg-5 {
-    flex: 0 0 calc(50% - 10px);
+}
+
+.form-headline {
+  font-size: 1.4em;
+  letter-spacing: 0em;
+  font-weight: 600;
+  text-align: start;
+  margin-bottom: 20px;
+  color: #ececec;
+  @media (max-width: 450px) {
+    font-size: 1.4em;
+  }
+}
+
+@media (max-width: 450px) {
+  .contact-form label {
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+}
+
+.form-row {
+  color: #ececec;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  font-family: "WixMadeforDisplay-VariableFont_wght", sans-serif;
+
+  @media (max-width: 450px) {
+    flex-direction: column;
+  }
+}
+
+.contact-form .col-lg-5 {
+  flex: 0 0 calc(50% - 10px);
 }
 
 .contact-form .col-lg-10 {
-    flex: 0 0 100%;
+  flex: 0 0 100%;
 }
-  
-  input,
-  textarea {
-    width: 100%;
-    padding: 10px;
-    box-sizing: border-box;
-    border: none; 
-    background-color: #dbe8e8; 
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  border: none;
+  background-color: #dbe8e8;
+}
+input:hover,
+textarea:hover {
+  background-color: #f8eba8;
+}
+
+textarea {
+  height: 100px;
+}
+
+.button-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.submit-button {
+  width: 114px;
+  height: 40px;
+  background-color: #3e83a4;
+  border: none;
+  color: #ececec;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #5b92ac;
   }
-  input:hover,
-  textarea:hover {
-    background-color: #f8eba8; 
-  }
-  
-  textarea {
-    height: 100px; 
-  }
-  
-  .button-wrapper {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px; 
-  }
-  
-  .submit-button {
-    width: 114px;
-    height: 40px;
-    background-color: #3e83a4;
-    border: none;
-    color: #ececec;
-    font-size: 15px;
-    font-weight: bold;
-    cursor: pointer;
-  
-    &:hover {
-      background-color: #5b92ac;
-    }
-  }
+}

@@ -19,11 +19,11 @@
 }
 .grid-row {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); 
-  justify-items: center; 
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
 }
 .parent-container {
-  position: relative; 
+  position: relative;
 }
 
 .right-image {
@@ -122,22 +122,22 @@ textarea {
   width: 100%;
   padding: 10px;
   box-sizing: border-box;
-  border: none; 
-  background-color: #dbe8e8; 
+  border: none;
+  background-color: #dbe8e8;
 }
 input:hover,
 textarea:hover {
-  background-color: #f8eba8; 
+  background-color: #f8eba8;
 }
 
 textarea {
-  height: 100px; 
+  height: 100px;
 }
 
 .button-wrapper {
   display: flex;
   justify-content: center;
-  margin-top: 20px; 
+  margin-top: 20px;
 }
 
 .submit-button {
@@ -324,19 +324,18 @@ div.item:nth-of-type(3) {
   }
 }
 
-.ruka1Element{
+.ruka1Element {
   position: absolute;
   width: 30%;
   height: auto;
   z-index: 2;
   left: 0px;
 }
-.ruka2Element{
+.ruka2Element {
   position: absolute;
   width: 50%;
   height: auto;
   z-index: 9999;
   right: 1px;
   transform: scaleX(-1) translateX(-30px) translate(0, -90px) rotate(-30deg);
-
 }

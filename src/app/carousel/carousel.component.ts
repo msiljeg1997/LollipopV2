@@ -7,13 +7,12 @@ import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
   selector: 'app-carousel',
   templateUrl: './carousel.component.html',
   styleUrls: ['./carousel.component.scss'],
-  encapsulation: ViewEncapsulation.None
+  encapsulation: ViewEncapsulation.None,
 })
 export class CarouselComponent {
+  constructor(private modalService: NgbModal) {}
 
-  constructor(private modalService: NgbModal) { }
-
-  images = [1,2,3].map((n) => `/assets/slika${n}.jpeg`);
+  images = [1, 2, 3].map((n) => `/assets/slika${n}.jpeg`);
   showNavigationIndicators = true;
   showNavigationArrows = true;
   selectedImage: string = '';

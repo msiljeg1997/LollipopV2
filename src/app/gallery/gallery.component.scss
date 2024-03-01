@@ -1,14 +1,15 @@
-.section_slika_services, .section_slika_services2 {
+.section_slika_services,
+.section_slika_services2 {
     width: 100vw;
     background-repeat: no-repeat;
-    background-size: 100% 100%; 
+    background-size: 100% 100%;
     object-fit: cover;
     background-position: center;
 }
 
 .section_slika_services {
     height: 500px;
-    background-image: url('/assets/SectionGallerySlika1.jpeg');
+    background-image: url("/assets/SectionGallerySlika1.jpeg");
     @media (max-width: 450px) {
         height: 520px;
     }
@@ -16,7 +17,7 @@
 
 .section_slika_services2 {
     height: fit-content;
-    background-image: url('/assets/sectionServicesSlika2.jpeg');
+    background-image: url("/assets/sectionServicesSlika2.jpeg");
     @media (max-width: 450px) {
     }
 }
