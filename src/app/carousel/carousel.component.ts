@@ -16,9 +16,4 @@ export class CarouselComponent {
   showNavigationIndicators = true;
   showNavigationArrows = true;
   selectedImage: string = '';
-
-  openLargerImage(img: any) {
-    this.modalService.open({ size: 'lg' });
-    this.selectedImage = img;
-  }
 }

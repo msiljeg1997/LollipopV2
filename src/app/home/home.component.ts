@@ -1,13 +1,14 @@
-import { Component, ElementRef, HostListener, Renderer2 } from '@angular/core';
+import { Component, ElementRef, HostListener, OnInit, Renderer2 } from '@angular/core';
 import { FormGroup, FormControl } from '@angular/forms';
-
+import { Route, Router } from '@angular/router';
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss'],
 })
-export class HomeComponent {
-  constructor(private renderer: Renderer2, private el: ElementRef) {}
+export class HomeComponent implements OnInit{
+  constructor(private renderer: Renderer2, private el: ElementRef, private router: Router) {}
+  backgroundSize: string = '980px';
   isMobile = window.innerWidth < 450;
 
   contactForm = new FormGroup({
@@ -42,5 +43,25 @@ export class HomeComponent {
 
   onSubmit(): void {
     //moram sredit na bekendu
+  }
+
+  scrollToForm() {
+    const form = this.el.nativeElement.querySelector('.section_slika');
+    form.scrollIntoView({ behavior: 'smooth' });
+  }
+  
+  @HostListener('window:resize', ['$event'])
+  onResize2(event: Event) {
+    const target = event.target as Window | null;
+    if (target) {
+      const viewportWidth = target.innerWidth;
+      this.backgroundSize =
+        viewportWidth > 980 ? `${viewportWidth}px auto` : '980px auto';
+    }
+  }
+
+  ngOnInit() {
+    this.backgroundSize =
+      window.innerWidth > 980 ? `${window.innerWidth}px auto` : '980px auto';
   }
 }

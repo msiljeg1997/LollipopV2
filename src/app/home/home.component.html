@@ -1,4 +1,4 @@
-<div class="section_slika">
+<div class="section_slika pb-5">
     <div class="container container_margina">
         <div class="row d-flex justify-content-center mx-2">
             <div class="col-lg-8">
@@ -11,13 +11,14 @@
                         usluge čišćenja</p>
                     <p class="centered-text" *ngIf="!isMobile">Profesionalne
                         usluge čišćenja</p>
-                    <p class="centered-text2">Lorem ipsum dolor sit amet. Et
-                        totam quas eum tenetur molestiae in nobis
-                        quia ex officia sunt est galisum rerum sit quia
-                        repellendus ut iste fugiat. Aut sunt voluptatem
-                        ea libero fuga qui molestiae animi. Et minima rerum aut
-                        autem blanditiis vel tempora architecto
-                        aut sint magnam.</p>
+                    <p class="centered-text2">Obratite se našem profesionalnom
+                        timu ODMAH! Ispunite upitnik i zatražite
+                        ponudu.
+                        Uštedite vrijeme i novac i dopustite površinama da
+                        zablistaju.
+                        Cijene se formiraju individualno jer se svakom klijentu
+                        posvećujemo maksimalnu pažnju.
+                    </p>
                 </div>
             </div>
         </div>
@@ -31,22 +32,20 @@
                                 zatražite ponudu</p>
                             <div class="form-row">
                                 <div class="col-lg-5 col-12">
-                                    <label for="contact-number">Kontakt
-                                        broj</label>
-                                    <input type="tel" id="contact-number" formControlName="contactNumber"
-                                        placeholder="Kontakt broj">
+                                    <label for="name">Ime prezime/Tvrtka</label>
+                                    <input type="tel" id="contact-number" formControlName="contactNumber">
                                 </div>
                                 <div class="col-lg-5 col-12">
-                                    <label for="email">Email</label>
-                                    <input type="email" id="email" formControlName="email"
-                                        placeholder="email@example.com">
+                                    <label for="Kontakt broj/email">Kontakt
+                                        broj/email </label>
+                                    <input type="email" id="email" formControlName="email">
                                 </div>
                             </div>
                             <div class="form-row">
                                 <div class="col-lg-10 col-12">
-                                    <label for="message">Vaša poruka</label>
+                                    <label for="message">Vaš upit: </label>
                                     <textarea id="message" rows="4" formControlName="message"
-                                        placeholder="Napišite upit"></textarea>
+                                        placeholder="Navedite kvadraturu, vrstu objekta te rok do kojeg želite da bude očišćeno!"></textarea>
                                 </div>
                             </div>
                             <div class="button-wrapper">
@@ -67,109 +66,143 @@
                                 zatražite ponudu</p>
                             <div class="form-row">
                                 <div class="col-lg-5">
-                                    <label for="contact-number">Kontakt
-                                        broj</label>
-                                    <input type="tel" id="contact-number" placeholder="Kontakt broj">
+                                    <label for="contact-number">Ime prezime/Tvrtka </label>
+                                    <input type="tel" id="contact-number">
                                 </div>
                                 <div class="col-lg-5">
-                                    <label for="email">Email</label>
-                                    <input type="email" id="email" placeholder="email@example.com">
+                                    <label for="email">Kontakt broj/Email </label>
+                                    <input type="email" id="email">
                                 </div>
                             </div>
                             <div class="form-row">
                                 <div class="col-lg-10">
-                                    <label for="message">Vaša poruka</label>
-                                    <textarea id="message" rows="4" placeholder="Napišite upit"></textarea>
+                                    <label for="message">Vaš upit: </label>
+                                    <textarea id="message" rows="4"
+                                        placeholder="Navedite kvadraturu, vrstu objekta te rok do kojeg želite da bude očišćeno!"></textarea>
                                 </div>
                             </div>
                             <div class="button-wrapper">
-                                <button type="submit" class="submit-button">Pošalji</button>
+                                <button class="gumb_mobile" routerLink="/services">Vidi više</button>
                             </div>
                         </form>
                     </div>
                 </div>
             </div>
         </div>
-        <div *ngIf="!isMobile" class="row d-flex justify-content-center mx-2">
-            <div class="col-lg-10">
-                <div class="badi">
-                    <main id="carousel">
-                        <div class="item">
-                            <div class="item-content">
-                                <h2 class="item-text-header">Jednokratno
-                                    čiščenje</h2>
-                                <p class="item-text">Lorem ipsum dolor sit amet.
-                                    Et totam quas eum tenetur molestiae in
-                                    nobis quia ex officia sunt est galisum rerum
-                                    sit quia repellendus</p>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="item-content">
-                                <h2 class="item-text-header">Usluge
-                                    čišćenja</h2>
-                                <p class="item-text">Lorem ipsum dolor sit amet.
-                                    Et totam quas eum tenetur molestiae in
-                                    nobis quia ex officia sunt est galisum rerum
-                                    sit quia repellendus</p>
-                                <button class="gumb">Vidi više</button>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="item-content">
-                                <h2 class="item-text-header">Svakodnevno
-                                    održavanje</h2>
-                                <p class="item-text">Lorem ipsum dolor sit amet.
-                                    Et totam quas eum tenetur molestiae in
-                                    nobis quia ex officia sunt est galisum rerum
-                                    sit quia repellendus</p>
-                            </div>
-                        </div>
-                    </main>
-                </div>
-            </div>
-        </div>
-        <div *ngIf="isMobile" class="row d-flex justify-content-center mt-5 mx-2">
-            <div class="col-lg-10">
-                <div class="white-box-carousel-mobile">
-                    <img src="/assets/ruka.jpeg" alt="Cistaljka" class="ruka1Element">
-                    <p class="Card1_Headliner_mobile">Usluge čišćenja</p>
-                    <p class="Card1_p_mobile">Apartmani</p>
-                    <p class="Card1_p_mobile">Stanovi i kuće</p>
-                    <p class="Card1_p_mobile">Poslovni prostori</p>
-                    <p class="Card1_p_mobile">Dubinsko čiščenje</p>
-                    <p class="Card1_p_mobileP">Ćiščenje nakon <br> građevinskih
-                        radova</p>
-                    <div class="gumb_wrapper_mobile d-flex justify-content-center">
-                        <button class="gumb_mobile">Vidi više</button>
+    </div>
+</div>
+<div class="section-home2-wrapper mt-5">
+    <div class="section2Naslovna">
+        <div *ngIf="!isMobile" class="container">
+            <div class="row d-flex justify-content-center column-gap-3 ">
+                <div class="slikaNaslovnaColLijevo col-lg-5 col-sm-10 d-flex justify-content-center"></div>
+                <div class="naslovnaColDesno col-lg-5 col-sm-10 d-flex justify-content-start p-5">
+                    <div class="TextWrapperCol">
+                        <p class="header1Col">Naš primarni cilj je Vaše
+                            zadovoljstvo.</p>
+                        <p class="header2Col">Želite li svježinu i urednost? Na
+                            pravom ste mjestu</p>
+                        <p class="paragraph header3Col">Sa više od 7 godina
+                            iskustva, pouzdanosti i
+                            kvalitetom osiguravamo čistoću Vašeg prostora.
+                            Moguće je kombinirati usluge prema Vašim željama.
+                            <span class="nemaOgranicenja">Za nas nema
+                                ograničenja i ništa nije nemoguće.</span>
+                        <p class="paragraph header4Col">Obratite nam se s
+                            povjerenjem:</p>
+                        <p class="paragraph brojmobitela header5Col">Broj
+                            mobitela:<br> <span class="brojmobitelaSpan">+385
+                                91
+                                3245</span>
+                        </p>
+                        <p class="paragraph header6Col email">Email:<br>
+                            <span class="emailSpan">test.testovic@gmail.com</span>
+                        </p>
                     </div>
-                    <img src="/assets/ruka2.jpeg" alt="Cistaljka" class="ruka2Element">
                 </div>
             </div>
         </div>
-        <div *ngIf="isMobile" class="row d-flex justify-content-center mt-5 mx-2">
-            <div class="col-lg-10">
-                <div class="white-box-carousel-mobile">
-                    <p class="Card2_Headliner_mobile">Jednokratno čišćenja</p>
-                    <p class="Card2_p_mobile">Ea amet animi ab dolorem saepe sed
-                        voluptas aliquam! Est consequuntur
-                        galisum ab quisquam architecto et dolorem adipisci aut
-                        minima quia ut voluptas amet qui deleniti
-                        architecto. Nam sapiente eius 33 dolorem.</p>
+        <div *ngIf="isMobile" class="container container-tekstSlika">
+            <div class="row d-flex justify-content-center container-textSlikaIspod column-gap-3">
+                <div class="slikaNaslovnaColLijevo col-12 d-flex justify-content-center"></div>
+                <div class="naslovnaColDesno col-12 d-flex justify-content-start">
+                    <div class="TextWrapperCol">
+                        <p class="header1Col">Naš primarni cilj je Vaše
+                            zadovoljstvo.</p>
+                        <p class="header2Col">Želite li svježinu i urednost? Na
+                            pravom ste mjestu</p>
+                        <p class="paragraph header3Col">Sa više od 7 godina
+                            iskustva, pouzdanosti i
+                            kvalitetom osiguravamo čistoću Vašeg prostora.
+                            Moguće je kombinirati usluge prema Vašim željama.
+                            <span class="nemaOgranicenja">Za nas nema
+                                ograničenja i ništa nije nemoguće.</span>
+                        <p class="paragraph header4Col">Obratite nam se s
+                            povjerenjem:</p>
+                        <p class="paragraph brojmobitela header5Col">Broj
+                            mobitela:<br> <span class="brojmobitelaSpan">+385
+                                91
+                                3245</span>
+                        </p>
+                        <p class="paragraph header6Col email">Email:<br>
+                            <span class="emailSpan">test.testovic@gmail.com</span>
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
-        <div *ngIf="isMobile" class="row d-flex justify-content-center mt-5 mb-5 mx-2">
-            <div class="col-lg-10">
-                <div class="white-box-carousel-mobile">
-                    <p class="Card3_Headliner_mobile">Svakodnevno održavanje</p>
-                    <p class="Card3_p_mobile">Ea amet animi ab dolorem saepe sed
-                        voluptas aliquam! Est consequuntur
-                        galisum ab quisquam architecto et dolorem adipisci aut
-                        minima quia ut voluptas amet qui deleniti
-                        architecto. Nam sapiente eius 33 dolorem.</p>
+        <div class="container-fluid kucice-container">
+            <div class="row d-flex justify-content-center container-kucicePadding pt-5">
+                <div class="col-lg-2 procesiKucice mb-5">
+                    <div class=" span-wrapper">
+                        <span class="span1"></span>
+                        <p class="spanP">Ispunite upit i zatražite
+                            ponudu</p>
+                    </div>
+                </div>
+                <div class="col-lg-2 procesiKucice mb-5">
+                    <div class=" span-wrapper">
+                        <span class="span2"></span>
+                        <p class="spanP">Mi radimo procjenu <br> (osobno ili
+                            putem videa)</p>
+                    </div>
+                </div>
+                <div class="col-lg-2 procesiKucice mb-5">
+                    <div class=" span-wrapper">
+                        <span class="span3"></span>
+                        <p class="spanP">Potpis ugovora</p>
+                    </div>
+                </div>
+                <div class="col-lg-2 procesiKucice mb-5">
+                    <div class=" span-wrapper">
+                        <span class="span4"></span>
+                        <p class="spanP">Krećemo na posao!</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="section4Naslovna d-flex justify-content-center" [style.background-size]="backgroundSize">
+    <div class="container d-flex justify-content-center">
+        <div class="row d-flex justify-content-center pt-5 pb-5">
+            <div class="col-lg-12 d-flex justify-content-center colTextSection4">
+                <div class="text-wrapper-section4 d-flex justify-content-center">
+                    <p class="section4Text">Ako smatrate da je čistoća
+                        ključna za zdrav život<br>
+                        <span class="naPravomMjestuSpan">na pravom ste
+                            mjestu!</span>
+                    </p>
+                    <div class="gumb-wrapper4">
+                        <button class="gumbSection4" (click)="scrollToForm()">
+                            Pošalji upit
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+
 </div>
