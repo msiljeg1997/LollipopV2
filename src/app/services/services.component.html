@@ -1,10 +1,13 @@
 <div class="section1-wrapper">
     <div class="section_slika_services" [style.background-size]="backgroundSize">
         <div class="text-wrapper">
-            <p class="centered-text">Istražite naše usluge</p>
-            <p class="centered-text2">Lorem ipsum dolor sit amet. Et totam quas eum tenetur molestiae in nobis quia ex
-                officia sunt est galisum rerum sit quia repellendus ut iste fugiat. Aut sunt voluptatem ea libero fuga
-                qui molestiae animi. Et minima rerum aut autem blanditiis vel tempora architecto aut sint magnam.</p>
+            <p *ngIf="!isMobile" class="centered-text">Dobrodošli u "Naše usluge" <br> vaš vodič kroz čistoću i sjaj!
+            </p>
+            <p *ngIf="isMobile" class="centered-text">Dobrodošli u "Naše usluge" - vaš vodič kroz čistoću i sjaj!</p>
+            <p class="centered-text2">Spremni smo očistiti sve što zamislite - od mirnih domova do pulsirajućih
+                poslovnih prostora, i čak nakon graditeljskih poduhvata, bez obzira na to koliko se zadaća čini
+                izazovnom. Zaronite s nama u svijet čistoće gdje mašta postaje stvarnost, a svaki prostor zrači novim
+                sjajem.</p>
             <img src="/assets/moco.jpeg" alt="moco" class="moco_element_uWrapperTextu">
         </div>
     </div>
@@ -13,25 +16,26 @@
     <div class="section_slika_services2">
         <div class="container-fluid ">
             <div class="row column-gap-3 d-flex justify-content-center">
-                <div class="col-lg-5 order-lg-1 order-1 mt-3 mb-3 myColPics myColPics1 ">
+                <div class="col-lg-5 order-lg-1 order-1 mb-3 myColPics myColPics1 ">
                     <p class="myPGridLeft">Stanovi i kuće</p>
                 </div>
                 <div class="col-lg-5 order-lg-2 order-2 mt-3 mb-3 myColText myColText1">
                     <div class="myPTextGridWrapper">
-                        <p class="myPTextGridRight">Lorem ipsum dolor sit amet. Sed harum eveniet ad quam alias ut
-                            rerum nisi nam nesciunt voluptatem At repudiandae quas. Aut modi officia qui veniam quod
-                            ut accusantium officiis non voluptas recusandae ut voluptas officiis est dolorum illo ut
-                            quam dolore</p>
+                        <p class="myPTextGridRight">Uživajte u besprijekornom okruženju svog doma s našom predanošću
+                            čistoći! Za nas, čišćenje vašeg stambenog prostora nije samo posao, već prilika za izgradnju
+                            povjerenja i bliskih odnosa s našim klijentima. Pružamo mogućnost snimanja čišćenja kako
+                            biste uvijek imali povjerenja u našu uslugu.</p>
                     </div>
                 </div>
             </div>
             <div class="row column-gap-3 d-flex justify-content-center">
                 <div class="col-lg-5 order-lg-1 mt-3 order-2 mb-3 myColText myColText2">
                     <div class="myPTextGridWrapper">
-                        <p class="myPTextGridLeft">Lorem ipsum dolor sit amet. Sed harum eveniet ad quam alias ut
-                            rerum nisi nam nesciunt voluptatem At repudiandae quas. Aut modi officia qui veniam quod
-                            ut accusantium officiis non voluptas recusandae ut voluptas officiis est dolorum illo ut
-                            quam dolore</p>
+                        <p class="myPTextGridLeft">Dobrodošli u svijet čistoće za vaše apartmane! Svjesni smo dinamičnog
+                            ritma sezone i stalnih promjena gostiju. Naša specijalnost je brzo i efikasno čišćenje
+                            apartmana, bilo da je u pitanju dnevni, tjedni ili mjesečni najam. Naplaćujemo po ulasku i
+                            osiguravamo usluge pranja posteljina, jastučnica i navlaka kako bi vaši gosti uvijek uživali
+                            u svježini i udobnosti.</p>
                     </div>
                 </div>
                 <div class="col-lg-5 order-lg-2 mt-3 order-1 mb-3my myColPics myColPics2">
@@ -44,24 +48,22 @@
                 </div>
                 <div class="col-lg-5 order-lg-2 order-2 mt-3 mb-3 myColText myColText3">
                     <div class="myPTextGridWrapper">
-                        <p class="myPTextGridRight">Lorem ipsum dolor sit amet. Sed harum eveniet ad quam alias ut
-                            rerum nisi nam nesciunt voluptatem At repudiandae quas. Aut modi officia qui veniam quod
-                            ut accusantium officiis non voluptas recusandae ut voluptas officiis est dolorum illo ut
-                            quam dolore</p>
+                        <p class="myPTextGridRight">Osiguravamo da vaš poslovni prostor odiše profesionalnošću i
+                            urednošću! Fleksibilno prilagođavamo vrijeme čišćenja vašem rasporedu, no preferiramo ulazak
+                            nakon radnog vremena jer kad mi čistimo prašina se diže!</p>
                     </div>
                 </div>
             </div>
             <div class="row column-gap-3 d-flex justify-content-center">
                 <div class="col-lg-5 order-lg-1 order-2 mt-3 mb-3 myColText myColText4">
                     <div class="myPTextGridWrapper">
-                        <p class="myPTextGridLeft">Lorem ipsum dolor sit amet. Sed harum eveniet ad quam alias ut
-                            rerum nisi nam nesciunt voluptatem At repudiandae quas. Aut modi officia qui veniam quod
-                            ut accusantium officiis non voluptas recusandae ut voluptas officiis est dolorum illo ut
-                            quam dolore</p>
+                        <p class="myPTextGridLeft">Osiguravamo da novi vlasnici uđu u besprijekorno čistu zgradu nakon
+                            građevinskih radova! Iako prljavština može biti izazov, naš tim je uvijek spreman za akciju.
+                            Važno je da površine blistaju kako bi se stvorio pozitivan dojam.</p>
                     </div>
                 </div>
                 <div class="col-lg-5 order-lg-2 order-1 mt-3 mb-3 myColPics myColPics4">
-                    <p class="myPGridRightRadovi">Čiščenje nakon građevinskih radova</p>
+                    <p class="myPGridRightRadovi">Čišćenje nakon građevinskih radova</p>
                 </div>
             </div>
         </div>
