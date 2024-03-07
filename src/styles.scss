@@ -17,3 +17,18 @@
 body {
     font-family: 'WixMadeforDisplay-VariableFont_wght', sans-serif;
 }
+@media screen and (max-width: 1200px) {
+    .navbar-collapse {
+      background-color: rgba(255, 255, 255, 0.961) !important;
+    }
+    .navbar-collapse .nav-link {
+      text-align: start;
+      font-size: large;
+      color: #565656;
+      margin-left: 20px;
+      margin-right: 0px;
+    }
+    .navbarNav{
+        z-index: 9999 !important;
+    }
+  }

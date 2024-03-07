@@ -356,6 +356,15 @@ div.item:nth-of-type(3) {
   background-repeat: no-repeat;
   background-size: 100% 100%;
   background-position: center;
+
+  @media (min-width: 650px) and (max-width: 1400px) {
+    min-width: 650px;
+  }
+
+  @media (min-width: 450px) and (max-width: 650px) {
+    min-width: 540px;
+  }
+
   @media (max-width: 450px) {
     padding: 0px !important;
     margin-bottom: 20px !important;
@@ -559,6 +568,9 @@ margin-bottom: 20px;
   text-align: start;
   margin-right: 50px;
 
+  @media (max-width: 767px) {
+    font-size: 30px; 
+  }
 }
 .text-wrapper-section4{
   max-width: fit-content;
