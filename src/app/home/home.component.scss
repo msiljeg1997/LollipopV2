@@ -556,7 +556,7 @@ margin-bottom: 20px;
     z-index: 2;
     background-position: center;
     @media (max-width: 450px) {
-        height: 520px;
+        height: fit-content;
         background-size: 100% 100%;
     }
 }
@@ -570,6 +570,7 @@ margin-bottom: 20px;
 
   @media (max-width: 767px) {
     font-size: 30px; 
+    margin-right: 20px;
   }
 }
 .text-wrapper-section4{
@@ -636,4 +637,13 @@ padding: 0px;
 }
 .gumb-wrapper4{
   margin-left: 200px;
+  @media (max-width: 450px) {
+    margin-left: 150px;
+}
+}
+.rowZadnjiHome{
+  padding-bottom: 20px;
+  @media (max-width: 450px) {
+    padding-bottom: 0px;
+}
 }
