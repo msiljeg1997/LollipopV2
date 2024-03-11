@@ -2,8 +2,8 @@
     [showNavigationIndicators]="showNavigationIndicators">
     <ng-template ngbSlide *ngFor="let media of images; index as i">
         <div class="picsum-img-wrapper">
-            <img *ngIf="media.type === 'image'" [src]="media.src" alt="Random slide" />
-            <video *ngIf="media.type === 'video'" [src]="media.src" controls></video>
+            <img *ngIf="media.type === 'image'" [src]="media.src" alt="image_before_and_after" />
+            <video *ngIf="media.type === 'video'" [src]="media.src" alt="video_our_work" controls></video>
         </div>
     </ng-template>
 </ngb-carousel>
