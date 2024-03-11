@@ -37,19 +37,19 @@
 }
 .moco_element_uWrapperTextu {
     position: absolute;
-    top: -16%;
+    top: 20%;
     right: -40%;
     transform: translateY(-50%);
     width: auto;
-    height: 200%;
-    z-index: 9999;
-    @media (max-width: 450px) {
+    height: 150%;
+    z-index: 998;
+    @media (max-width: 455px) {
         top: -20%;
         right: -10%;
         height: 87%;
     }
 }
-@media (min-width: 450px) and (max-width: 809px) {
+@media (min-width: 455px) and (max-width: 809px) {
     .moco_element_uWrapperTextu {
       display: block;
       top: 10px;
