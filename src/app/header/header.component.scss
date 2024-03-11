@@ -51,8 +51,13 @@ a {
     background-color: #3e83a4;
     color: white;
     border: none;
-    width: 250px;
+    width: fit-content;
     border-radius: 0;
     height: 50px;
     margin-left: 10px;
+}
+
+.acallus{
+    color: white;
+    text-decoration: none;
 }
