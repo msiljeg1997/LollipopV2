@@ -88,6 +88,9 @@
     text-align: justify;
     color: #565656;
     font-family: "WixMadeforDisplay-VariableFont_wght", sans-serif;
+    @media (max-width: 479px) {
+        padding:10px;
+    }
 }
 .center-content {
     display: grid;

@@ -1,13 +1,15 @@
 import { Component, ElementRef, HostListener, OnInit, Renderer2 } from '@angular/core';
 import { FormGroup, FormControl } from '@angular/forms';
 import { Route, Router } from '@angular/router';
+import { HttpClient } from '@angular/common/http';
+
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss'],
 })
-export class HomeComponent implements OnInit{
-  constructor(private renderer: Renderer2, private el: ElementRef, private router: Router) {}
+export class HomeComponent implements OnInit {
+  constructor(private renderer: Renderer2, private el: ElementRef, private router: Router, private http: HttpClient) { }
   backgroundSize: string = '980px';
   isMobile = window.innerWidth < 450;
 
@@ -41,15 +43,20 @@ export class HomeComponent implements OnInit{
     }
   }
 
-  onSubmit(): void {
-    //moram sredit na bekendu
+  onSubmit() {
+    this.http.post('https://lollipop-shine.hr/send_mail/index.php', this.contactForm.value)
+      .subscribe(response => {
+        console.log(response);
+      }, error => {
+        console.error(error);
+      });
   }
 
   scrollToForm() {
     const form = this.el.nativeElement.querySelector('.section_slika');
     form.scrollIntoView({ behavior: 'smooth' });
   }
-  
+
   @HostListener('window:resize', ['$event'])
   onResize2(event: Event) {
     const target = event.target as Window | null;
