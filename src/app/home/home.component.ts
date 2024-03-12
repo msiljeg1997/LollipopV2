@@ -3,21 +3,25 @@ import { FormGroup, FormControl } from '@angular/forms';
 import { Route, Router } from '@angular/router';
 import { HttpClient } from '@angular/common/http';
 
+
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss'],
 })
 export class HomeComponent implements OnInit {
-  constructor(private renderer: Renderer2, private el: ElementRef, private router: Router, private http: HttpClient) { }
+  constructor(private renderer: Renderer2, private el: ElementRef, private router: Router, public http: HttpClient) { }
   backgroundSize: string = '980px';
-  isMobile = window.innerWidth < 450;
+  isMobile = window.innerWidth < 479;
+  feedbackMessage: string = '';
+  isSubmitted: boolean = false;
 
   contactForm = new FormGroup({
-    contactNumber: new FormControl(''),
-    email: new FormControl(''),
+    name: new FormControl(''),
+    contact: new FormControl(''),
     message: new FormControl(''),
   });
+
 
   @HostListener('window:resize', ['$event'])
   onResize(event: any) {
@@ -43,12 +47,25 @@ export class HomeComponent implements OnInit {
     }
   }
 
+
   onSubmit() {
     this.http.post('https://lollipop-shine.hr/send_mail/index.php', this.contactForm.value)
       .subscribe(response => {
-        console.log(response);
+        this.feedbackMessage = 'Zahtjev Poslan!';
+        this.isSubmitted = true;
+        this.contactForm.reset();
+
+
+        setTimeout(() => {
+          this.isSubmitted = false;
+        }, 5000);
       }, error => {
         console.error(error);
+        this.feedbackMessage = 'Problem kod slanja zahtjeva';
+        this.isSubmitted = true;
+        setTimeout(() => {
+          this.isSubmitted = false;
+        }, 5000);
       });
   }
 

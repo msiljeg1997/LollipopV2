@@ -53,7 +53,9 @@
                             <div class="button-wrapper">
                                 <button type="submit" class="submit-button">Pošalji</button>
                             </div>
+                            <p *ngIf="isSubmitted" class="feedback">{{ feedbackMessage }}</p>
                         </form>
+
                     </div>
                 </div>
             </div>
