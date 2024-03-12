@@ -15,6 +15,7 @@ export class HomeComponent implements OnInit {
   isMobile = window.innerWidth < 479;
   feedbackMessage: string = '';
   isSubmitted: boolean = false;
+  isSubmitting: boolean = false;
 
   contactForm = new FormGroup({
     name: new FormControl(''),
@@ -49,22 +50,52 @@ export class HomeComponent implements OnInit {
 
 
   onSubmit() {
+    console.log('Form submitted');
+    this.isSubmitting = true; // disable the submit button
+
     this.http.post('https://lollipop-shine.hr/send_mail/index.php', this.contactForm.value)
       .subscribe(response => {
         this.feedbackMessage = 'Zahtjev Poslan!';
         this.isSubmitted = true;
         this.contactForm.reset();
 
-
         setTimeout(() => {
           this.isSubmitted = false;
+          this.isSubmitting = false; // re-enable the submit button after 5 seconds
         }, 5000);
       }, error => {
         console.error(error);
         this.feedbackMessage = 'Problem kod slanja zahtjeva';
         this.isSubmitted = true;
+
         setTimeout(() => {
           this.isSubmitted = false;
+          this.isSubmitting = false; // re-enable the submit button after 5 seconds
+        }, 5000);
+      });
+  }
+  onSubmitMobile() {
+    console.log('Form submitted');
+    this.isSubmitting = true; // disable the submit button
+
+    this.http.post('https://lollipop-shine.hr/send_mail/index.php', this.contactForm.value)
+      .subscribe(response => {
+        this.feedbackMessage = 'Zahtjev Poslan!';
+        this.isSubmitted = true;
+        this.contactForm.reset();
+
+        setTimeout(() => {
+          this.isSubmitted = false;
+          this.isSubmitting = false; // re-enable the submit button after 5 seconds
+        }, 5000);
+      }, error => {
+        console.error(error);
+        this.feedbackMessage = 'Problem kod slanja zahtjeva';
+        this.isSubmitted = true;
+
+        setTimeout(() => {
+          this.isSubmitted = false;
+          this.isSubmitting = false; // re-enable the submit button after 5 seconds
         }, 5000);
       });
   }

@@ -64,30 +64,30 @@
             <div class="col-lg-8">
                 <div class="parent-container">
                     <div class="white-box" whiteBox>
-                        <form class="contact-form">
+                        <form class="contact-form" [formGroup]="contactForm" (ngSubmit)="onSubmitMobile()">
                             <img src="/assets/cistaljka.jpeg" alt="moco_ukrasna_slika" class="right-image">
-                            <p class="form-headline">Kontaktirajte nas i
-                                zatražite ponudu</p>
+                            <p class="form-headline">Kontaktirajte nas i zatražite ponudu</p>
                             <div class="form-row">
                                 <div class="col-lg-5">
-                                    <label for="contact-number">Ime prezime/Tvrtka </label>
-                                    <input type="tel" id="contact-number">
+                                    <label for="name">Ime prezime/Tvrtka </label>
+                                    <input type="text" id="name" formControlName="name">
                                 </div>
                                 <div class="col-lg-5">
-                                    <label for="email">Kontakt broj/Email </label>
-                                    <input type="email" id="email">
+                                    <label for="contact">Kontakt broj/Email </label>
+                                    <input type="text" id="contact" formControlName="contact">
                                 </div>
                             </div>
                             <div class="form-row">
                                 <div class="col-lg-10">
                                     <label for="message">Vaš upit: </label>
-                                    <textarea id="message" rows="4"
+                                    <textarea id="message" rows="4" formControlName="message"
                                         placeholder="Navedite kvadraturu, vrstu objekta te rok do kojeg želite da bude očišćeno!"></textarea>
                                 </div>
                             </div>
                             <div class="button-wrapper">
-                                <button class="gumb_mobile" routerLink="/services">Vidi više</button>
+                                <button type="submit" class="gumb_mobile">Pošalji</button>
                             </div>
+                            <p class="feedback" *ngIf="isSubmitted">{{ feedbackMessage }}</p>
                         </form>
                     </div>
                 </div>
