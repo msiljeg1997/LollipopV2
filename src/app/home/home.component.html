@@ -30,17 +30,23 @@
                     <div class="white-box" whiteBox>
                         <form class="contact-form" [formGroup]="contactForm" (ngSubmit)="onSubmit()">
                             <img src="/assets/cistaljka.jpeg" alt="moco_ukrasna_slika" class="right-image">
-                            <p class="form-headline">Kontaktirajte nas i
-                                zatražite ponudu</p>
+                            <p class="form-headline">Kontaktirajte nas i zatražite ponudu</p>
                             <div class="form-row">
                                 <div class="col-lg-5 col-12">
                                     <label for="name">Ime prezime/Tvrtka</label>
                                     <input type="text" id="name" formControlName="name">
+                                    <div
+                                        *ngIf="contactForm.controls.name.invalid && (contactForm.controls.name.dirty || contactForm.controls.name.touched)">
+                                        <small class="text-danger">Sva polja moraju biti unesena</small>
+                                    </div>
                                 </div>
                                 <div class="col-lg-5 col-12">
-                                    <label for="Kontakt broj/email">Kontakt
-                                        broj/email </label>
+                                    <label for="contact">Kontakt broj/email </label>
                                     <input type="text" id="contact" formControlName="contact">
+                                    <div
+                                        *ngIf="contactForm.controls.contact.invalid && (contactForm.controls.contact.dirty || contactForm.controls.contact.touched)">
+                                        <small class="text-danger">Sva polja moraju biti unesena</small>
+                                    </div>
                                 </div>
                             </div>
                             <div class="form-row">
@@ -48,14 +54,18 @@
                                     <label for="message">Vaš upit: </label>
                                     <textarea id="message" rows="4" formControlName="message"
                                         placeholder="Navedite kvadraturu, vrstu objekta te rok do kojeg želite da bude očišćeno!"></textarea>
+                                    <div
+                                        *ngIf="contactForm.controls.message.invalid && (contactForm.controls.message.dirty || contactForm.controls.message.touched)">
+                                        <small class="text-danger">Sva polja moraju biti unesena</small>
+                                    </div>
                                 </div>
                             </div>
                             <div class="button-wrapper">
-                                <button type="submit" class="submit-button">Pošalji</button>
+                                <button type="submit" class="submit-button"
+                                    [disabled]="contactForm.invalid">Pošalji</button>
                             </div>
                             <p *ngIf="isSubmitted" class="feedback">{{ feedbackMessage }}</p>
                         </form>
-
                     </div>
                 </div>
             </div>
@@ -71,10 +81,18 @@
                                 <div class="col-lg-5">
                                     <label for="name">Ime prezime/Tvrtka </label>
                                     <input type="text" id="name" formControlName="name">
+                                    <div
+                                        *ngIf="contactForm.controls.name.invalid && (contactForm.controls.name.dirty || contactForm.controls.name.touched)">
+                                        <small class="text-danger">Sva polja moraju biti unesena</small>
+                                    </div>
                                 </div>
                                 <div class="col-lg-5">
                                     <label for="contact">Kontakt broj/Email </label>
                                     <input type="text" id="contact" formControlName="contact">
+                                    <div
+                                        *ngIf="contactForm.controls.contact.invalid && (contactForm.controls.contact.dirty || contactForm.controls.contact.touched)">
+                                        <small class="text-danger">Sva polja moraju biti unesena</small>
+                                    </div>
                                 </div>
                             </div>
                             <div class="form-row">
@@ -82,10 +100,15 @@
                                     <label for="message">Vaš upit: </label>
                                     <textarea id="message" rows="4" formControlName="message"
                                         placeholder="Navedite kvadraturu, vrstu objekta te rok do kojeg želite da bude očišćeno!"></textarea>
+                                    <div
+                                        *ngIf="contactForm.controls.message.invalid && (contactForm.controls.message.dirty || contactForm.controls.message.touched)">
+                                        <small class="text-danger">Sva polja moraju biti unesena</small>
+                                    </div>
                                 </div>
                             </div>
                             <div class="button-wrapper">
-                                <button type="submit" class="gumb_mobile">Pošalji</button>
+                                <button type="submit" class="gumb_mobile"
+                                    [disabled]="contactForm.invalid">Pošalji</button>
                             </div>
                             <p class="feedback" *ngIf="isSubmitted">{{ feedbackMessage }}</p>
                         </form>

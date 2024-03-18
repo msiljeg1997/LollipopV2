@@ -18,9 +18,14 @@
 .section_slika_services2 {
     height: fit-content;
     background-image: url("/assets/sectionServicesSlika2.jpeg");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
     @media (max-width: 450px) {
     }
 }
+
 
 .text-wrapper {
     position: relative;
@@ -38,7 +43,9 @@
         transform: translate(-50%, -30%);
     }
 }
+.container2{
 
+}
 .centered-text {
     font-size: 40px;
     font-weight: bold;

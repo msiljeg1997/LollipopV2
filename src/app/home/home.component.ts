@@ -1,5 +1,5 @@
 import { Component, ElementRef, HostListener, OnInit, Renderer2 } from '@angular/core';
-import { FormGroup, FormControl } from '@angular/forms';
+import { FormGroup, FormControl, Validators } from '@angular/forms';
 import { Route, Router } from '@angular/router';
 import { HttpClient } from '@angular/common/http';
 
@@ -18,10 +18,12 @@ export class HomeComponent implements OnInit {
   isSubmitting: boolean = false;
 
   contactForm = new FormGroup({
-    name: new FormControl(''),
-    contact: new FormControl(''),
-    message: new FormControl(''),
+    name: new FormControl('', Validators.required),
+    contact: new FormControl('', Validators.required),
+    message: new FormControl('', Validators.required),
   });
+
+
 
 
   @HostListener('window:resize', ['$event'])
@@ -50,54 +52,72 @@ export class HomeComponent implements OnInit {
 
 
   onSubmit() {
-    console.log('Form submitted');
-    this.isSubmitting = true; // disable the submit button
+    if (this.contactForm.valid) {
+      console.log('Form submitted');
+      this.isSubmitting = true; // disable the submit button
 
-    this.http.post('https://lollipop-shine.hr/send_mail/index.php', this.contactForm.value)
-      .subscribe(response => {
-        this.feedbackMessage = 'Zahtjev Poslan!';
-        this.isSubmitted = true;
-        this.contactForm.reset();
+      this.http.post('https://lollipop-shine.hr/send_mail/index.php', this.contactForm.value)
+        .subscribe(response => {
+          this.feedbackMessage = 'Zahtjev Poslan!';
+          this.isSubmitted = true;
+          this.contactForm.reset();
 
-        setTimeout(() => {
-          this.isSubmitted = false;
-          this.isSubmitting = false; // re-enable the submit button after 5 seconds
-        }, 5000);
-      }, error => {
-        console.error(error);
-        this.feedbackMessage = 'Problem kod slanja zahtjeva';
-        this.isSubmitted = true;
+          setTimeout(() => {
+            this.isSubmitted = false;
+            this.isSubmitting = false; // re-enable the submit button after 5 seconds
+          }, 5000);
+        }, error => {
+          console.error(error);
+          this.feedbackMessage = 'Problem kod slanja zahtjeva';
+          this.isSubmitted = true;
 
-        setTimeout(() => {
-          this.isSubmitted = false;
-          this.isSubmitting = false; // re-enable the submit button after 5 seconds
-        }, 5000);
-      });
+          setTimeout(() => {
+            this.isSubmitted = false;
+            this.isSubmitting = false; // re-enable the submit button after 5 seconds
+          }, 5000);
+        });
+    } else {
+      this.feedbackMessage = 'Sva polja trebaju biti popunjena.';
+      this.isSubmitted = true;
+
+      setTimeout(() => {
+        this.isSubmitted = false;
+      }, 5000);
+    }
   }
   onSubmitMobile() {
-    console.log('Form submitted');
-    this.isSubmitting = true; // disable the submit button
+    if (this.contactForm.valid) {
+      console.log('Form submitted');
+      this.isSubmitting = true; // disable the submit button
 
-    this.http.post('https://lollipop-shine.hr/send_mail/index.php', this.contactForm.value)
-      .subscribe(response => {
-        this.feedbackMessage = 'Zahtjev Poslan!';
-        this.isSubmitted = true;
-        this.contactForm.reset();
+      this.http.post('https://lollipop-shine.hr/send_mail/index.php', this.contactForm.value)
+        .subscribe(response => {
+          this.feedbackMessage = 'Zahtjev Poslan!';
+          this.isSubmitted = true;
+          this.contactForm.reset();
 
-        setTimeout(() => {
-          this.isSubmitted = false;
-          this.isSubmitting = false; // re-enable the submit button after 5 seconds
-        }, 5000);
-      }, error => {
-        console.error(error);
-        this.feedbackMessage = 'Problem kod slanja zahtjeva';
-        this.isSubmitted = true;
+          setTimeout(() => {
+            this.isSubmitted = false;
+            this.isSubmitting = false; // re-enable the submit button after 5 seconds
+          }, 5000);
+        }, error => {
+          console.error(error);
+          this.feedbackMessage = 'Problem kod slanja zahtjeva';
+          this.isSubmitted = true;
 
-        setTimeout(() => {
-          this.isSubmitted = false;
-          this.isSubmitting = false; // re-enable the submit button after 5 seconds
-        }, 5000);
-      });
+          setTimeout(() => {
+            this.isSubmitted = false;
+            this.isSubmitting = false; // re-enable the submit button after 5 seconds
+          }, 5000);
+        });
+    } else {
+      this.feedbackMessage = 'Sva polja trebaju biti popunjena.';
+      this.isSubmitted = true;
+
+      setTimeout(() => {
+        this.isSubmitted = false;
+      }, 5000);
+    }
   }
 
   scrollToForm() {
