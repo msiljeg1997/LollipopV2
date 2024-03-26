@@ -17,17 +17,9 @@ export class CarouselComponent {
   images = [
     { type: 'image', src: '/assets/gal2.jpeg' },
     { type: 'image', src: '/assets/gal3.jpeg' },
-    { type: 'image', src: '/assets/gal4.jpeg' },
-    { type: 'image', src: '/assets/gal5.jpeg' },
-    { type: 'image', src: '/assets/gal6.jpeg' },
     { type: 'image', src: '/assets/gal7.jpeg' },
+    { type: 'image', src: '/assets/gal6.jpeg' },
     { type: 'image', src: '/assets/gal8.jpeg' },
     { type: 'image', src: '/assets/gal9.jpeg' },
-    { type: 'image', src: '/assets/gal10.jpeg' },
-    { type: 'image', src: '/assets/gal11.jpeg' },
-    { type: 'image', src: '/assets/gal13.jpeg' },
-    { type: 'image', src: '/assets/gal14.jpeg' },
-    { type: 'image', src: '/assets/gal18.jpeg' },
-    // ...
   ];
 }
